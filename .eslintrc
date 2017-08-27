@@ -1,0 +1,13 @@
+{
+  "extends": "airbnb",
+  "env":{
+    "browser": true
+  },
+  "rules":{
+      "max-len":[1,200],
+      "linebreak-style":0,
+      "jsx-a11y/href-no-hash": "off",
+      "react/prefer-stateless-function":"off",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    }
+}
