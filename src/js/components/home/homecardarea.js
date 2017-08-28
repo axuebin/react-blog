@@ -14,7 +14,7 @@ const data = [
       }, {
         title: '原生JS实现最简单的图片懒加载',
         url: '/blog/article2',
-      },{
+      }, {
         title: '用React实现一个简易的TodoList',
         url: '/blog/article2',
       },
@@ -40,7 +40,7 @@ const data = [
       {
         title: 'name : axuebin',
         url: '/',
-      },{
+      }, {
         title: 'age : 25',
         url: '/',
       },

@@ -28040,7 +28040,8 @@ var HomeCard = function (_React$Component) {
             _reactRouterDom.Link,
             { to: item.url },
             item.title
-          )
+          ),
+          ' '
         );
       });
       return _react2.default.createElement(
@@ -28049,7 +28050,6 @@ var HomeCard = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'home-card-name' },
-          ' ',
           _react2.default.createElement(
             _reactRouterDom.Link,
             { key: this.props.cardId, to: this.props.cardUrl },
@@ -28301,7 +28301,7 @@ var HomeHeader = function (_React$Component) {
           _react2.default.createElement(
             'p',
             null,
-            'Xue bin\'s Personal Growth Website'
+            'Xue bin Personal Growth Website'
           )
         ),
         _react2.default.createElement(

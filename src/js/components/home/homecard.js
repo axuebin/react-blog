@@ -10,12 +10,12 @@ export default class HomeCard extends React.Component {
     };
   }
   render() {
-    const contentList=this.props.cardContent.map(item=>
-      <li><Link to={item.url}>{item.title}</Link></li>
-    )
+    const contentList = this.props.cardContent.map(item => <li><Link to={item.url}>{item.title}</Link> </li>);
     return (
       <div className="home-card">
-        <div className="home-card-name"> <Link key={this.props.cardId} to={this.props.cardUrl}>{this.props.cardName}</Link></div>
+        <div className="home-card-name">
+          <Link key={this.props.cardId} to={this.props.cardUrl}>{this.props.cardName}</Link>
+        </div>
         <div className="home-card-content">
           <ul>
             {contentList}

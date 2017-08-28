@@ -7,7 +7,7 @@ export default class HomeHeader extends React.Component {
     return (
       <div className="home-header">
         <div className="home-header-title"><Link to="/">薛彬的个人主页</Link></div>
-        <div className="home-header-subtitle"><p>Xue bin's Personal Growth Website</p></div>
+        <div className="home-header-subtitle"><p>Xue bin Personal Growth Website</p></div>
         <div className="home-header-nav">
           <div className="home-header-nav-item"><Link to="/">Home</Link></div>
           <div className="home-header-nav-item"><Link to="/blog">Blog</Link></div>
