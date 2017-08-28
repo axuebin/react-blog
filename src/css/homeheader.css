@@ -15,7 +15,8 @@
 }
 
 .home-header-title a{
-  color: white
+  text-decoration: none;
+  color: white;
 }
 
 

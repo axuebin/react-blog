@@ -31,6 +31,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.25s ease;
+}
+
+.home-card-name:hover {
+  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
 }
 
 .home-card-name a {

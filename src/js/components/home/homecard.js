@@ -10,7 +10,7 @@ export default class HomeCard extends React.Component {
     };
   }
   render() {
-    const contentList = this.props.cardContent.map(item => <li><Link to={item.url}>{item.title}</Link> </li>);
+    const contentList = this.props.cardContent.map(item => <li key={item.id}><Link to={item.url}>{item.title}</Link> </li>);
     return (
       <div className="home-card">
         <div className="home-card-name">
@@ -30,12 +30,12 @@ HomeCard.defaultProps = {
   cardId: 'Card Id',
   cardName: 'Card Name',
   cardUrl: 'Card Url',
-  cardContent: 'Card Content',
+  cardContent: [],
 };
 
 HomeCard.propTypes = {
   cardId: PropTypes.number,
   cardName: PropTypes.string,
   cardUrl: PropTypes.string,
-  cardContent: PropTypes.string,
+  cardContent: PropTypes.array,
 };

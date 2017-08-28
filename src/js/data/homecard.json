@@ -3,37 +3,50 @@
     "cardId": 1,
     "cardName": "Blog",
     "cardUrl": "/blog",
-    "cardContent":[
+    "cardContent": [
       {
-        "title":"文章1",
-        "url":"/blog/article1",
-      },{
-        "title":"文章2",
-        "url":"/blog/article2",
+        "id":1,
+        "title": "JavaScript数据类型的存储",
+        "url": "/blog/article1"
+      }, {
+        "id":2,
+        "title": "原生JS实现最简单的图片懒加载",
+        "url": "/blog/article2"
+      }, {
+        "id":3,
+        "title": "用React实现一个简易的TodoList",
+        "url": "/blog/article2"
       }
     ]
   }, {
     "cardId": 2,
     "cardName": "Demo",
     "cardUrl": "/demo",
-    "cardContent":[
+    "cardContent": [
       {
-        "title":"Demo1",
-        "url":"/demo/1",
-      },{
-        "title":"Demo1",
-        "url":"/demo/2",
+        "id":1,
+        "title": "图片懒加载",
+        "url": "/demo/1"
+      }, {
+        "id":2,
+        "title": "TodoList",
+        "url": "/demo/2"
       }
     ]
   }, {
     "cardId": 3,
     "cardName": "About Me",
     "cardUrl": "/about",
-    "cardContent":[
+    "cardContent": [
       {
-        "title":"Github:axuebin",
-        "url":"http://github.com/axuebin",
+        "id":1,
+        "title": "name : axuebin",
+        "url": "/"
+      }, {
+        "id":2,
+        "title": "age : 25",
+        "url": "/"
       }
     ]
-  },
+  }
 ]
