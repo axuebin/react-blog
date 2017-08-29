@@ -21,7 +21,7 @@ export default class Home extends React.Component {
         <div>
           <HomeHeader />
           <Route exact path="/" component={HomeContent} />
-          <Route path="/reactblog" component={Blog} />
+          <Route path="/blog" component={Blog} />
         </div>
       </Router>
     );
