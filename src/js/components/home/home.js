@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, HashRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import HomeHeader from './homeheader';
 import HomeBanner from './homebanner';
 import HomeCardArea from './homecardarea';
@@ -10,7 +10,6 @@ const HomeContent = () => (
   <div>
     <HomeBanner />
     <HomeCardArea />
-    <HomeFooter />
   </div>
 );
 
@@ -22,6 +21,7 @@ export default class Home extends React.Component {
           <HomeHeader />
           <Route exact path="/" component={HomeContent} />
           <Route path="/blog" component={Blog} />
+          <HomeFooter />
         </div>
       </HashRouter>
     );

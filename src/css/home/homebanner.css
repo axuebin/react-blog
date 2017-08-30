@@ -1,0 +1,66 @@
+.home-banner {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  align-items: center;
+}
+
+.home-banner-me {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.home-banner-photo {
+  width: 400px;
+  height: 60%;
+  text-align: center;
+}
+
+.home-banner-photo img {
+  width: 200px;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.home-banner-desc {
+  height: 60%;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.home-banner-desc h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.home-banner-desc p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.home-banner-link {
+  font-size: 18px;
+  text-align: center;
+}
+
+.home-banner-link div {
+  display: inline;
+}
+
+.home-banner-link .link:after {
+  margin-right: 2px;
+  margin-left: 2px;
+  content: '/';
+}
+
+.home-banner-link a {
+  color: #13daec;
+  text-decoration: none;
+}
+
+.home-banner-link a:hover {
+  color: #71e9f4;
+}

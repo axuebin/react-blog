@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../css/homebanner.css';
+import '../../../css/home/homebanner.css';
 
 export default class HomeBanner extends React.Component {
   render() {

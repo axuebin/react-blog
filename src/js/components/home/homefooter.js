@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../css/homefooter.css';
+import '../../../css/home/homefooter.css';
 
 export default class HomeFooter extends React.Component {
   render() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import HomeCard from './homecard';
-import '../../../css/homecard.css';
+import '../../../css/home/homecard.css';
 
 export default class HomeCardArea extends React.Component {
   constructor() {
@@ -10,7 +10,7 @@ export default class HomeCardArea extends React.Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     fetch('./src/js/data/homecard.json').then(response => response.json()).then((data) => {
       const taskList = data.map(item => <HomeCard key={item.cardId} cardId={item.cardId} cardUrl={item.cardUrl} cardName={item.cardName} cardContent={item.cardContent} />);
       this.setState({ taskList });

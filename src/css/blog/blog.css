@@ -1,0 +1,13 @@
+.blog{
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: rgb(50,50,50);
+}
+
+.blog-container{
+  width:80%;
+  height:90%;
+}
