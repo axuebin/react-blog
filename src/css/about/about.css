@@ -1,0 +1,27 @@
+.about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(50, 50, 50);
+}
+
+.about-container {
+  width: 90%;
+  padding:0px 50px;
+  margin: 50px 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.about-detial{
+  margin: 20px 0px;
+}
+
+.about-detial ul{
+  margin-top: 10px;
+}
+
+.about-detial li {
+  font-size: 16px;
+  line-height: 30px;
+}

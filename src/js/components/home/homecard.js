@@ -21,14 +21,12 @@ export default class HomeCard extends React.Component {
 }
 
 HomeCard.defaultProps = {
-  cardId: 'Card Id',
   cardName: 'Card Name',
   cardUrl: 'Card Url',
   cardContent: [],
 };
 
 HomeCard.propTypes = {
-  cardId: PropTypes.number,
   cardName: PropTypes.string,
   cardUrl: PropTypes.string,
   cardContent: PropTypes.array,

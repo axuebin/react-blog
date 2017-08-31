@@ -7,12 +7,13 @@
 
 .blog-article-banner {
   width: 95%;
-  height: 100px;
+  height: 110px;
+  border-bottom: 1px solid black;
   background-color: rgb(255, 255, 255);
 }
 
 .blog-article-banner h2 {
-  font-size: 30px;
+  font-size: 20px;
   padding-left: 20px;
   line-height: 50px;
 }
@@ -25,12 +26,11 @@
 
 .blog-article-list {
   width: 95%;
-  margin-top: 20px;
 }
 
 .blog-article-item {
   height: 180px;
-  margin: 10px 0px;
+  border-bottom: 1px solid black;
   background-color: rgb(255, 255, 255);
 }
 
@@ -58,4 +58,13 @@
   padding:0px 20px;
   font-size: 16px;
   padding-top:10px;
+}
+
+.blog-article-paging {
+  width: 95%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
 }

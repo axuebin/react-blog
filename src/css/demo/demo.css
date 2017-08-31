@@ -1,0 +1,44 @@
+.demo{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content:center;
+  background-color: rgb(50,50,50);
+}
+
+.demo-container{
+  width:90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin: 50px 0px;
+}
+
+.demo-democard{
+  width:24%;
+  max-width: 400px;
+  max-height:400px;
+  margin: 5px;
+  background-color: rgb(255,255,255);
+}
+
+.demo-democard-title{
+  height:50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.demo-democard-title{
+  height:50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.demo-democard-title a{
+  text-decoration: none;
+  color:black;
+}
