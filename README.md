@@ -7,9 +7,17 @@
 
 ### TodoList
 
-* [ ] 首页
-* [ ] 博客首页
-* [ ] 关于我
+* [x] 静态页面
+* [ ] 整理目录结构
+* [ ] Redux管理数据
+* [ ] react-router路由
+* [ ] Github issus作文章数据源
+* [ ] react-markdown渲染md
+* [ ] 分类
+* [ ] 标签
+* [ ] 首页卡片
+* [ ] Demo页面
+
 
 ### 问题汇总
 
