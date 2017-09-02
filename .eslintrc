@@ -8,7 +8,7 @@
       "linebreak-style":0,
       'no-console': 'off',
       "jsx-a11y/href-no-hash": "off",
-      "forbid-prop-types":"off",
+      "react/forbid-prop-types":"off",
       "react/prefer-stateless-function":"off",
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     }

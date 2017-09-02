@@ -11,10 +11,13 @@ export default class ArticleList extends React.Component {
   }
 
   componentDidMount() {
-    fetch('./src/js/data/article.json').then(response => response.json()).then((data) => {
-      const articlelist = data.map(item => <ArticleItem key={item.id} articleId={item.id} url={item.url} title={item.title} time={item.time} desc={item.desc} />);
-      this.setState({ articlelist });
-    }).catch(e => console.log(e));
+    const url = 'https://api.github.com/repos/axuebin/react-blog/issues?creator=axuebin';
+    fetch(url)
+      .then(response => response.json())
+      .then((data) => {
+        const articlelist = data.map(item => <ArticleItem key={item.id} id={item.id} title={item.title} labels={item.labels} time={item.updated_at} desc={item.body} />);
+        this.setState({ articlelist });
+      }).catch(e => console.log(e));
   }
   render() {
     return (

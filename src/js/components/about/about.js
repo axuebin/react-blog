@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../../css/about/about.css';
+
 export default class About extends React.Component {
   render() {
     return (
@@ -16,17 +17,17 @@ export default class About extends React.Component {
               <li>喜欢看书和实践，喜欢旅游和运动</li>
             </ul>
           </div>
-          <hr/>
+          <hr />
           <div className="about-detial about-contact">
             <h1>联系我</h1>
             <ul>
               <li>个人主页：<a target="_blank" rel="noopener noreferrer" href="http://axuebin.com">http://axuebin.com</a></li>
-              <li>Github：<a  target="_blank" rel="noopener noreferrer" href="https://github.com/axuebin">https://github.com/axuebin</a></li>
+              <li>Github：<a target="_blank" rel="noopener noreferrer" href="https://github.com/axuebin">https://github.com/axuebin</a></li>
               <li>Email： xb@axuebin.com</li>
               <li>微信：xb9207</li>
             </ul>
           </div>
-          <hr/>
+          <hr />
           <div className="about-detial about-friend">
             <h1>友情链接</h1>
             <ul>
