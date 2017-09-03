@@ -10,9 +10,10 @@
 * [x] 静态页面
 * [ ] 整理目录结构
 * [ ] Redux管理数据
-* [ ] react-router路由
-* [ ] Github issus作文章数据源
-* [ ] react-markdown渲染md
+* [x] react-router路由
+* [x] Github issus作文章数据源
+* [x] react-markdown渲染md
+* [x] 代码高亮
 * [ ] 分类
 * [ ] 标签
 * [ ] 首页卡片
@@ -28,3 +29,21 @@
    - `<HashRouter>`借助URL上的哈希值（hash）来实现路由。可以在不需要全屏刷新的情况下，达到切换页面的目的。
 - 二级路由只改变URL，页面不跳转
 - react-markdown不支持表格的渲染
+
+### Update Log
+
+- 2017/09/02
+
+ - `[^]` 使用Github Issues作为文章数据源
+
+
+
+- 2017/08/31
+
+ - `[^]` 静态页面初步完成
+
+
+- 2017/08/27
+
+ - `[+]` First Blood
+
