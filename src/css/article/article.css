@@ -1,5 +1,4 @@
 @import '~highlight.js/styles/atom-one-dark.css';
-
 .article {
   width: 100%;
   display: flex;
@@ -67,18 +66,17 @@
   list-style-type: disc;
 }
 
-.article-detail blockquote{
-  height:30px;
-  font-size:1.2em;
+.article-detail blockquote {
+  height: 30px;
+  font-size: 1.2em;
   line-height: 30px;
-  padding-left:10px;
-  border-left:2px solid black;
-  background: rgb(200,200,200);
-  color:black;
+  padding-left: 10px;
+  border-left: 2px solid black;
+  background: rgb(200, 200, 200);
+  color: black;
 }
 
-.article-content p code,
-.article-content ul code {
+.article-content p code, .article-content ul code {
   display: inline-block;
   margin: 0 2px;
   padding: 0 4px;
@@ -109,22 +107,25 @@
   border-collapse: collapse;
 }
 
-.article-detail th,.article-detail td{
-  height:50px;
-  padding:0px 20px;
-  text-align:center;
-  vertical-align:middle;
+.article-detail p>img {
+  max-width: 100%;
 }
 
-.article-detail table> tbody > tr:nth-child(odd) > td,
-.article-detail table> tbody > tr:nth-child(odd) > th {
+.article-detail th, .article-detail td {
+  height: 50px;
+  padding: 0px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.article-detail table>tbody>tr:nth-child(odd)>td, .article-detail table>tbody>tr:nth-child(odd)>th {
   background-color: #f9f9f9;
 }
 
 .article-navigation {
   width: 95%;
-  height:300px;
+  height: 300px;
   margin-left: 50px;
   background-color: white;
-  color:black;
+  color: black;
 }
