@@ -7,5 +7,7 @@
 
 .blog-container{
   width:90%;
+  height:auto;
+  min-height: 100%;
   margin: 50px 0px;
 }

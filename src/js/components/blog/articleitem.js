@@ -16,7 +16,7 @@ export default class ArticleItem extends React.Component {
     return (
       <div className="blog-article-item">
         <div className="blog-article-item-title">
-          <Link to={`/blog/post/${this.props.id}`}>{this.props.title}</Link>
+          <Link to={`/blog/${this.props.number}`}>{this.props.title}</Link>
         </div>
         <div className="blog-article-item-time">{time}</div>
         <div className="blog-article-item-label">{labelList}</div>
@@ -29,7 +29,7 @@ export default class ArticleItem extends React.Component {
 }
 
 ArticleItem.defaultProps = {
-  id: 'id',
+  number: 'number',
   title: 'title',
   labels: 'label',
   time: 'time',
@@ -37,7 +37,7 @@ ArticleItem.defaultProps = {
 };
 
 ArticleItem.propTypes = {
-  id: PropTypes.number,
+  number: PropTypes.number,
   title: PropTypes.string,
   labels: PropTypes.array,
   time: PropTypes.string,

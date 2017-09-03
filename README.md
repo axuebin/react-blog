@@ -27,3 +27,4 @@
    - 通过修改`<Router>`→`<HashRouter>`。
    - `<HashRouter>`借助URL上的哈希值（hash）来实现路由。可以在不需要全屏刷新的情况下，达到切换页面的目的。
 - 二级路由只改变URL，页面不跳转
+- react-markdown不支持表格的渲染

@@ -15,7 +15,7 @@ export default class ArticleList extends React.Component {
     fetch(url)
       .then(response => response.json())
       .then((data) => {
-        const articlelist = data.map(item => <ArticleItem key={item.id} id={item.id} title={item.title} labels={item.labels} time={item.updated_at} desc={item.body} />);
+        const articlelist = data.map(item => <ArticleItem key={item.id} id={item.id} number={item.number} title={item.title} labels={item.labels} time={item.updated_at} desc={item.body} />);
         this.setState({ articlelist });
       }).catch(e => console.log(e));
   }

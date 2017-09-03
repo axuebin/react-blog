@@ -13,13 +13,13 @@
 }
 
 .blog-article-banner h2 {
-  font-size: 20px;
+  font-size: 16px;
   padding-left: 20px;
   line-height: 50px;
 }
 
 .blog-article-banner p {
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 20px;
   line-height: 50px;
 }
@@ -29,16 +29,16 @@
 }
 
 .blog-article-item {
-  height: 160px;
+  padding-bottom:15px;
   border-bottom: 1px solid black;
   background-color: rgb(255, 255, 255);
 }
 
 .blog-article-item-title {
-  height: 70px;
+  height: 50px;
   padding-left: 20px;
-  font-size: 30px;
-  line-height: 70px;
+  font-size: 2em;
+  line-height: 50px;
 }
 
 .blog-article-item-title a {
@@ -50,15 +50,14 @@
   display: inline-block;
   height: 30px;
   padding-left: 20px;
-  font-size: 20px;
+  font-size: 1.3em;
   line-height: 30px;
 }
 
 .blog-article-item-desc {
-  height: 40px;
   padding: 0px 20px;
-  font-size: 20px;
-  padding-top: 10px;
+  padding-top:10px;
+  font-size: 1.3em;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -70,7 +69,7 @@
   width: 95%;
   height: 50px;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 1.3em;
   text-align: center;
   background-color: rgb(255, 255, 255);
 }
@@ -81,7 +80,7 @@
 }
 
 .blog-article-label a{
-  padding:5px 10px;
+  padding:3px 5px;
   text-decoration: none;
   color: white;
   background-color: blue;
@@ -91,6 +90,6 @@
   display: inline-block;
   height: 30px;
   padding-left: 20px;
-  font-size: 20px;
+  font-size: 1.3em;
   line-height: 30px;
 }
