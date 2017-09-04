@@ -38,11 +38,11 @@ export default class HomeCardArea extends React.Component {
 
         const aboutList = [{
           id: 1,
-          title: 'name : axuebin',
+          title: '2018届应届生',
           url: '/about',
         }, {
           id: 2,
-          title: 'age : 25',
+          title: '求工作求工作求工作...',
           url: '/about',
         }];
 
