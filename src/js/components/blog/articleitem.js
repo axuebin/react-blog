@@ -8,7 +8,7 @@ export default class ArticleItem extends React.Component {
   render() {
     const labelList = this.props.labels.map((item) => {
       if (item.name !== 'blog') {
-        return <ArticleLabel key={item.id} id={item.id} name={item.name} />;
+        return <ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} />;
       }
       return null;
     });
@@ -21,7 +21,7 @@ export default class ArticleItem extends React.Component {
         <div className="blog-article-item-time">{time}</div>
         <div className="blog-article-item-label">{labelList}</div>
         <div className="blog-article-item-desc">
-          <p>{this.props.desc}</p>
+          <p>{this.props.desc.split('----')[0]}</p>
         </div>
       </div>
     );

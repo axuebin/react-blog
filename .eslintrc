@@ -10,6 +10,7 @@
       "jsx-a11y/href-no-hash": "off",
       "react/forbid-prop-types":"off",
       "react/prefer-stateless-function":"off",
+      "no-return-assign": 0,
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     }
 }

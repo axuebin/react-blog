@@ -19,9 +19,12 @@ const BlogIndex = () => (
 );
 
 export default class Blog extends React.Component {
+  componentDidMount() {
+    this.node.scrollIntoView();
+  }
   render() {
     return (
-      <div>
+      <div ref={node => this.node = node} >
         <Route exact path={`${this.props.match.url}/`} component={BlogIndex} />
         <Route path={`${this.props.match.url}/:number`} component={Article} />
       </div>

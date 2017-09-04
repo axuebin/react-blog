@@ -2,9 +2,12 @@ import React from 'react';
 import '../../../css/about/about.css';
 
 export default class About extends React.Component {
+  componentDidMount() {
+    this.node.scrollIntoView();
+  }
   render() {
     return (
-      <div className="about">
+      <div className="about" ref={node => this.node = node} >
         <div className="about-container">
           <div className="about-detial about-desc">
             <h1>关于我</h1>

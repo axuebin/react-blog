@@ -63,6 +63,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  white-space: no-wrap;
 }
 
 .blog-article-paging {
@@ -80,10 +81,10 @@
 }
 
 .blog-article-label a{
-  padding:3px 5px;
+  padding:8px;
   text-decoration: none;
   color: white;
-  background-color: blue;
+  line-height: 2;
 }
 
 .blog-article-item-time{

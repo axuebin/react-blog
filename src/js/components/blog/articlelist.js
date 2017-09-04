@@ -9,8 +9,7 @@ export default class ArticleList extends React.Component {
       articlelist: null,
     };
   }
-
-  componentDidMount() {
+  componentWillMount() {
     const url = 'https://api.github.com/repos/axuebin/react-blog/issues?creator=axuebin';
     fetch(url)
       .then(response => response.json())
