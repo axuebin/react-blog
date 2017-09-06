@@ -1,8 +1,8 @@
 {
-  "name": "05-01",
+  "name": "react-blog",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "react-blog by axuebin",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
