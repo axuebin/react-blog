@@ -6,7 +6,7 @@
   "rules":{
       "max-len":[1,200],
       "linebreak-style":0,
-      'no-console': 'off',
+      "no-console": "off",
       "jsx-a11y/href-no-hash": "off",
       "react/forbid-prop-types":"off",
       "react/prefer-stateless-function":"off",
