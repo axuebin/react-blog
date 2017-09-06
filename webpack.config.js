@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 
+// config
 module.exports = {
   context: __dirname + '/src',
   entry: "./js/app.js",
