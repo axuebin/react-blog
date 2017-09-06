@@ -2,10 +2,10 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import ArticleArea from './articlearea';
-import RightSider from './rightsider';
-import Article from '../article/article';
-import '../../../css/blog/blog.css';
+import ArticleArea from '../components/blog/articlearea';
+import RightSider from '../components/blog/rightsider';
+import Article from './article';
+import '../../css/blog/blog.css';
 
 const BlogIndex = () => (
   <div className="blog">

@@ -4,10 +4,10 @@ import { HashRouter, Route } from 'react-router-dom';
 import '../css/index.css';
 import HomeHeader from './components/home/homeheader';
 import HomeFooter from './components/home/homefooter';
-import Home from './components/home/home';
-import Blog from './components/blog/blog';
-import Demo from './components/demo/demo';
-import About from './components/about/about';
+import Home from './containers/home';
+import Blog from './containers/blog';
+import Demo from './containers/demo';
+import About from './containers/about';
 
 export default class App extends React.Component {
   render() {
@@ -25,7 +25,6 @@ export default class App extends React.Component {
     );
   }
 }
-
 
 ReactDOM.render(
   <App />, document.getElementById('example'));

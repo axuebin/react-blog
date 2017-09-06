@@ -1,6 +1,6 @@
 import React from 'react';
-import DemoCard from './democard';
-import '../../../css/demo/demo.css';
+import DemoCard from '../components/demo/democard';
+import '../../css/demo/demo.css';
 
 const democardList = [];
 for (let i = 0; i < 12; i += 1) {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import PropTypes from 'prop-types';
-import ArticleContent from './content';
-import ArticleNavigation from './navigation';
-import '../../../css/article/article.css';
+import ArticleContent from '../components/article/content';
+import ArticleNavigation from '../components/article/navigation';
+import '../../css/article/article.css';
 
 export default class Article extends React.Component {
   constructor() {

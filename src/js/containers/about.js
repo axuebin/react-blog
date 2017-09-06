@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../css/about/about.css';
+import '../../css/about/about.css';
 
 export default class About extends React.Component {
   componentDidMount() {
