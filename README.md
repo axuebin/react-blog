@@ -10,15 +10,15 @@
 * [x] 静态页面
 * [ ] 整理目录结构
 * [ ] Redux管理数据
-* [x] react-router路由
+* [ ] react-router路由
 * [x] Github issus作文章数据源
 * [x] react-markdown渲染md
 * [x] 代码高亮
-* [ ] 摘要
+* [x] 摘要
 * [ ] 回到顶部
 * [ ] 分类
 * [ ] 标签
-* [ ] 首页卡片
+* [x] 首页卡片
 * [ ] Demo页面
 
 
