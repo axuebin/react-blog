@@ -18,7 +18,7 @@ export default class ArticleContent extends React.Component {
           <h2>{this.props.title}</h2>
         </div>
         <div className="article-time">
-          {this.props.time}
+          {this.props.time.split('T')[0]}
         </div>
         <div className="article-detail" dangerouslySetInnerHTML={{ __html: marked(this.props.content) }} />
       </div>

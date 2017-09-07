@@ -29,7 +29,7 @@
 }
 
 .blog-article-item {
-  padding-bottom:15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid black;
   background-color: rgb(255, 255, 255);
 }
@@ -49,14 +49,38 @@
 .blog-article-item-label {
   display: inline-block;
   height: 30px;
+  padding-left: 10px;
+  font-size: 1.3em;
+  line-height: 30px;
+}
+
+.blog-article-item-time {
+  display: inline-block;
+  height: 30px;
   padding-left: 20px;
   font-size: 1.3em;
   line-height: 30px;
 }
 
+.blog-article-label {
+  display: inline;
+  margin: 0px 5px;
+}
+
+.blog-article-label a {
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+  line-height: 2;
+}
+
+.blog-article-item-label i {
+  margin-left: 5px;
+}
+
 .blog-article-item-desc {
   padding: 0px 20px;
-  padding-top:10px;
+  padding-top: 10px;
   font-size: 1.3em;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -73,24 +97,4 @@
   font-size: 1.3em;
   text-align: center;
   background-color: rgb(255, 255, 255);
-}
-
-.blog-article-label{
-  display: inline;
-  margin-right: 5px;
-}
-
-.blog-article-label a{
-  padding:8px;
-  text-decoration: none;
-  color: white;
-  line-height: 2;
-}
-
-.blog-article-item-time{
-  display: inline-block;
-  height: 30px;
-  padding-left: 20px;
-  font-size: 1.3em;
-  line-height: 30px;
 }

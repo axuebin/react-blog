@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from 'antd';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ArticleLabel from './articlelabel';
@@ -18,14 +19,14 @@ export default class ArticleItem extends React.Component {
       }
       return null;
     });
-    const time = this.props.time;
+    const time = this.props.time.split('T')[0];
     return (
       <div className="blog-article-item">
         <div className="blog-article-item-title">
           <Link to={`/blog/${this.props.number}`}>{this.props.title}</Link>
         </div>
-        <div className="blog-article-item-time">{time}</div>
-        <div className="blog-article-item-label">{category}{labelList}</div>
+        <div className="blog-article-item-time"><Icon type="calendar" /> {time}</div>
+        <div className="blog-article-item-label"><Icon type="bars" /> {category}<Icon type="tag-o" /> {labelList}</div>
         <div className="blog-article-item-desc">
           <p>{this.props.desc.split('----')[0]}</p>
         </div>

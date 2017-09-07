@@ -38,6 +38,13 @@ export default class About extends React.Component {
               <li><a target="_blank" rel="noopener noreferrer" href="http://sundway.me">Sundway</a></li>
             </ul>
           </div>
+          <hr />
+          <div className="about-detial about-简历">
+            <h1>我的简历</h1>
+            <ul>
+              <li><a target="_blank" rel="noopener noreferrer" href="http://axuebin.com/cv/xuebin-Resume.pdf">前端开发工程师</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     );
