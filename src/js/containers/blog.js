@@ -1,27 +1,15 @@
 import React from 'react';
-import { Row, Col } from 'antd';
-import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import ArticleArea from '../components/blog/articlearea';
-import RightSider from '../components/blog/rightsider';
+import { Route } from 'react-router-dom';
+import BlogIndex from '../components/blog/blogindex';
 import Article from './article';
 import '../../css/blog/blog.css';
-
-const BlogIndex = () => (
-  <div className="blog">
-    <div className="blog-container">
-      <Row>
-        <Col span={18}><ArticleArea /></Col>
-        <Col span={6}><RightSider /></Col>
-      </Row>
-    </div>
-  </div>
-);
 
 export default class Blog extends React.Component {
   componentDidMount() {
     this.node.scrollIntoView();
   }
+
   render() {
     return (
       <div ref={node => this.node = node} >
@@ -33,7 +21,7 @@ export default class Blog extends React.Component {
 }
 
 Blog.defaultProps = {
-  match: 'match',
+  match: null,
   url: 'url',
 };
 

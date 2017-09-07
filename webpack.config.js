@@ -4,7 +4,7 @@ var path = require('path');
 // config
 module.exports = {
   context: __dirname + '/src',
-  entry: "./js/app.js",
+  entry: "./js/index.js",
   module: {
     loaders: [
       {

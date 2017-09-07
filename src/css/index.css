@@ -5,3 +5,7 @@ html, body {
   padding: 0;
   overflow: auto;
 }
+
+.main{
+  min-height: 100%;
+}

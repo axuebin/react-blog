@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ArticleList from './articlelist';
 import ArticlePaging from './articlepaging';
 import '../../../css/blog/articlearea.css';
@@ -15,9 +16,17 @@ export default class ArticleArea extends React.Component {
     return (
       <div className="blog-article-area">
         <ArticleBanner />
-        <ArticleList />
+        <ArticleList issues={this.props.issues} />
         <ArticlePaging />
       </div>
     );
   }
 }
+
+ArticleArea.defaultProps = {
+  issues: null,
+};
+
+ArticleArea.propTypes = {
+  issues: PropTypes.array,
+};
