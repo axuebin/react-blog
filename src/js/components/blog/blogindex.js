@@ -20,7 +20,7 @@ class BlogIndex extends React.Component {
         <div className="blog-container">
           <Row>
             <Col span={18}><ArticleArea issues={this.props.items} /></Col>
-            <Col span={6}><RightSider /></Col>
+            <Col span={6}><RightSider issues={this.props.items} /></Col>
           </Row>
         </div>
       </div>
@@ -41,18 +41,8 @@ BlogIndex.propTypes = {
 };
 
 function mapStateToProps(state) {
-  const {
-    isFetching,
-    items,
-  } = state || {
-    isFetching: true,
-    items: [],
-  };
-
-  return {
-    isFetching,
-    items,
-  };
+  const { isFetching, items } = state || { isFetching: true, items: [] };
+  return { isFetching, items };
 }
 
 export default connect(mapStateToProps)(BlogIndex);

@@ -59,3 +59,20 @@
   color:black;
   border-bottom: 1px solid black;
 }
+
+.blog-rightsider-categorycard-content li{
+  height:40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+}
+
+.blog-rightsider-categorycard-content a{
+  color:rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+
+.blog-rightsider-categorycard-content a:hover{
+  color:rgba(0, 0, 0, 1);
+}

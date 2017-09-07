@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import CategoryCard from './categorycard';
 import LabelCard from './labelcard';
@@ -15,9 +16,17 @@ export default class RightSider extends React.Component {
     return (
       <div className="blog-rightsider">
         <ArchiveCard />
-        <CategoryCard />
+        <CategoryCard issues={this.props.issues} />
         <LabelCard />
       </div>
     );
   }
 }
+
+RightSider.defaultProps = {
+  issues: [],
+};
+
+RightSider.propTypes = {
+  issues: PropTypes.array,
+};

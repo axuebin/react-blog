@@ -6,8 +6,14 @@ import '../../../css/blog/articlearea.css';
 
 export default class ArticleItem extends React.Component {
   render() {
+    const category = this.props.labels.map((item) => {
+      if (item.color === 'd93f0b') {
+        return <ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} />;
+      }
+      return null;
+    });
     const labelList = this.props.labels.map((item) => {
-      if (item.name !== 'blog') {
+      if (item.color !== '0052cc' && item.color !== 'd93f0b') {
         return <ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} />;
       }
       return null;
@@ -19,7 +25,7 @@ export default class ArticleItem extends React.Component {
           <Link to={`/blog/${this.props.number}`}>{this.props.title}</Link>
         </div>
         <div className="blog-article-item-time">{time}</div>
-        <div className="blog-article-item-label">{labelList}</div>
+        <div className="blog-article-item-label">{category}{labelList}</div>
         <div className="blog-article-item-desc">
           <p>{this.props.desc.split('----')[0]}</p>
         </div>
