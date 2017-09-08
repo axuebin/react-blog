@@ -32,7 +32,7 @@
 }
 
 .article-detail {
-  padding: 10px 40px;
+  padding: 10px 40px 20px 40px;
   line-height: 1.6;
 }
 
@@ -109,6 +109,8 @@
 
 .article-detail p>img {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .article-detail th, .article-detail td {
@@ -125,7 +127,7 @@
 .article-navigation {
   width: 95%;
   height: 300px;
-  margin-left: 50px;
+  margin-left: 30px;
   background-color: white;
   color: black;
 }
