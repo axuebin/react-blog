@@ -35,7 +35,8 @@ export default class CategoryCard extends React.Component {
         }
       }
     }
-    const categoryLinkList = categoryList.map(item => <Link to={`/blog/${item.url}`}><li key={item.id}>{item.name}<span>{item.sum}</span></li></Link>).reverse();
+
+    const categoryLinkList = categoryList.map(item => <Link key={item.id} to={`/blog/${item.url}`}><li key={item.id}>{item.name}<span>{item.sum}</span></li></Link>).sort((a, b) => b.sum - a.sum);
     this.setState({ categoryLinkList });
   }
   render() {
