@@ -17,7 +17,7 @@ export default class RightSider extends React.Component {
       <div className="blog-rightsider">
         <ArchiveCard />
         <CategoryCard issues={this.props.issues} />
-        <LabelCard />
+        <LabelCard issues={this.props.issues} />
       </div>
     );
   }
