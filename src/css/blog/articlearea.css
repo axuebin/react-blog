@@ -8,7 +8,7 @@
 .blog-article-banner {
   width: 95%;
   height: 110px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.65);
   background-color: rgb(255, 255, 255);
 }
 
@@ -30,7 +30,7 @@
 
 .blog-article-item {
   padding-bottom: 15px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.65);
   background-color: rgb(255, 255, 255);
 }
 
@@ -89,6 +89,16 @@
   -webkit-box-orient: vertical;
   white-space: no-wrap;
 }
+
+.blog-article-item-desc-more{
+  float:right;
+}
+
+.blog-article-item-desc-more a{
+  color: black;
+  text-decoration: none;
+}
+
 
 .blog-article-paging {
   width: 95%;

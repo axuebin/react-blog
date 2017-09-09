@@ -31,7 +31,10 @@ export default class ArticleItem extends React.Component {
         <div className="blog-article-item-time"><Icon type="calendar" /> {time}</div>
         <div className="blog-article-item-label"><Icon type="bars" /> {category}<Icon type="tag-o" /> {labelList}</div>
         <div className="blog-article-item-desc">
-          <p>{this.props.desc.split('----')[0]}</p>
+          <p>
+            {this.props.desc.split('----')[0]}
+            <span className="blog-article-item-desc-more"><Link to={`/blog/${this.props.number}`}>Learn more...</Link></span>
+          </p>
         </div>
       </div>
     );
