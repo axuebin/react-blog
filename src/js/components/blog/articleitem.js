@@ -2,11 +2,9 @@ import React from 'react';
 import { Icon } from 'antd';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { COLOR_LABEL_BLOG, COLOR_LABEL_CATEGORY } from '../../constants/config';
 import ArticleLabel from './articlelabel';
 import '../../../css/blog/articlearea.css';
-
-const COLOR_LABEL_BLOG = '0052cc';
-const COLOR_LABEL_CATEGORY = 'd93f0b';
 
 export default class ArticleItem extends React.Component {
   render() {

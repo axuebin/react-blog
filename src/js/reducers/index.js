@@ -1,4 +1,4 @@
-import { REQUEST_ISSUES, RECEIVE_ISSUES } from '../actions';
+import { REQUEST_ISSUES, RECEIVE_ISSUES } from '../constants/actiontype';
 
 function issues(state = {
   isFetching: false,

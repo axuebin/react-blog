@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from 'antd';
 import { Link } from 'react-router-dom';
+import { COLOR_LABEL_BLOG, COLOR_LABEL_CATEGORY } from '../../constants/config';
 import '../../../css/blog/rightsider.css';
-
-const COLOR_LABEL_BLOG = '0052cc';
-const COLOR_LABEL_CATEGORY = 'd93f0b';
 
 export default class LabelCard extends React.Component {
   constructor() {

@@ -1,7 +1,5 @@
 import fetch from 'isomorphic-fetch';
-
-export const REQUEST_ISSUES = 'REQUEST_ISSUES';
-export const RECEIVE_ISSUES = 'RECEIVE_ISSUES';
+import { REQUEST_ISSUES, RECEIVE_ISSUES } from '../constants/actiontype';
 
 function requestIssues() {
   return {
