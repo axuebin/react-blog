@@ -37,7 +37,7 @@ Archive.defaultProps = {
 
 Archive.propTypes = {
   dispatch: PropTypes.func,
-  isFetching: PropTypes.boolean,
+  isFetching: PropTypes.bool,
   items: PropTypes.array,
 };
 

@@ -36,7 +36,7 @@ BlogIndex.defaultProps = {
 
 BlogIndex.propTypes = {
   dispatch: PropTypes.func,
-  isFetching: PropTypes.boolean,
+  isFetching: PropTypes.bool,
   items: PropTypes.array,
 };
 
