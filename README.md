@@ -21,6 +21,7 @@
 * [ ] 翻页功能
 * [x] 首页卡片
 * [ ] Demo页面
+* [ ] 整理代码
 
 
 ### 问题汇总
@@ -35,6 +36,8 @@
 - 路由跳转后页面不会自动回到顶部
    - 使用`scrollIntoView()`，但是不能跳到整个页面的顶部。
 - Tag List显示字体大小应该如何计算。（或采用词云来展示？）
+- Expected 'this' to be used by class method。建议使用static，但是用了static之后bind会出错。。暂时关闭这个rule。。
+- 现在很多模块和css是重复的，需要整理代码。。
 
 ### Update Log
 
