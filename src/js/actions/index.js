@@ -19,7 +19,7 @@ function receiveIssues(json) {
 function fetchIssues() {
   return (dispatch) => {
     dispatch(requestIssues());
-    return fetch('https://api.github.com/repos/axuebin/react-blog/issues?creator=axuebin')
+    return fetch('https://api.github.com/repos/axuebin/react-blog/issues?creator=axuebin&labels=blog')
       .then(response => response.json())
       .then(json => dispatch(receiveIssues(json)))
       .catch(e => console.log(e));

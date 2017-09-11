@@ -13,12 +13,12 @@ export default class HomeCardArea extends React.Component {
   }
 
   componentDidMount() {
-    const url = 'https://api.github.com/repos/axuebin/react-blog/issues?creator=axuebin';
+    const url = 'https://api.github.com/repos/axuebin/react-blog/issues?creator=axuebin&labels=blog';
     fetch(url)
       .then(response => response.json())
       .then((data) => {
         const articleList = [];
-        for (let i = 0; i < data.length; i += 1) {
+        for (let i = 0; i < 6; i += 1) {
           const articleTemp = {};
           articleTemp.title = data[i].title;
           articleTemp.id = data[i].number;
