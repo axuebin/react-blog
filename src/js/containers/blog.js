@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Route } from 'react-router-dom';
 import BlogIndex from '../components/blog/blogindex';
 import Article from './article';
+import Archive from './archive';
 import '../../css/blog/blog.css';
 
 export default class Blog extends React.Component {
@@ -14,7 +15,8 @@ export default class Blog extends React.Component {
     return (
       <div ref={node => this.node = node} >
         <Route exact path={`${this.props.match.url}/`} component={BlogIndex} />
-        <Route path={`${this.props.match.url}/:number`} component={Article} />
+        <Route path={`${this.props.match.url}/archive`} component={Archive} />
+        <Route path={`${this.props.match.url}/article/:number`} component={Article} />
       </div>
     );
   }

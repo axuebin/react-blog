@@ -26,14 +26,14 @@ export default class ArticleItem extends React.Component {
     return (
       <div className="blog-article-item">
         <div className="blog-article-item-title">
-          <Link to={`/blog/${this.props.number}`}>{this.props.title}</Link>
+          <Link to={`/blog/article/${this.props.number}`}>{this.props.title}</Link>
         </div>
         <div className="blog-article-item-time"><Icon type="calendar" /> {time}</div>
         <div className="blog-article-item-label"><Icon type="bars" /> {category}<Icon type="tag-o" /> {labelList}</div>
         <div className="blog-article-item-desc">
           <p>
             {this.props.desc.split('----')[0]}
-            <span className="blog-article-item-desc-more"><Link to={`/blog/${this.props.number}`}>Learn more...</Link></span>
+            <span className="blog-article-item-desc-more"><Link to={`/blog/article/${this.props.number}`}>Learn more...</Link></span>
           </p>
         </div>
       </div>
