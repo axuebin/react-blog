@@ -6,13 +6,7 @@ import { COLOR_LABEL_CATEGORY } from '../../constants/config';
 import '../../../css/blog/rightsider.css';
 
 export default class CategoryCard extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      categoryLinkList: null,
-    };
-  }
-  componentWillMount() {
+  render() {
     const categoryList = [];
     const categoryHash = {};
     const issues = this.props.issues;
@@ -39,15 +33,13 @@ export default class CategoryCard extends React.Component {
     }
 
     const categoryLinkList = categoryList.sort((a, b) => b.sum - a.sum).map(item => <Link key={item.id} to={`/blog/type/${item.url}`}><li key={item.id}>{item.name}<span>{item.sum}</span></li></Link>);
-    this.setState({ categoryLinkList });
-  }
-  render() {
+
     return (
       <div className="blog-rightsider-categorycard">
         <div className="blog-rightsider-categorycard-title"><Icon type="bars" /> 分类</div>
         <div className="blog-rightsider-categorycard-content">
           <ul>
-            {this.state.categoryLinkList}
+            {categoryLinkList}
           </ul>
         </div>
       </div>

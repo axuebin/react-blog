@@ -6,13 +6,7 @@ import { COLOR_LABEL_BLOG, COLOR_LABEL_CATEGORY } from '../../constants/config';
 import '../../../css/blog/rightsider.css';
 
 export default class LabelCard extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      tagLinkList: null,
-    };
-  }
-  componentWillMount() {
+  render() {
     const tagList = [];
     const tagHash = {};
     const issues = this.props.issues;
@@ -53,14 +47,12 @@ export default class LabelCard extends React.Component {
       }
       return (<Link key={item.id} to={`/blog/tag/${item.url}`} style={style} >{item.name}</Link>);
     });
-    this.setState({ tagLinkList });
-  }
-  render() {
+
     return (
       <div className="blog-rightsider-tagcard">
         <div className="blog-rightsider-tagcard-title"><Icon type="tag-o" /> 标签</div>
         <div className="blog-rightsider-tagcard-content">
-          {this.state.tagLinkList}
+          {tagLinkList}
         </div>
       </div>
     );
