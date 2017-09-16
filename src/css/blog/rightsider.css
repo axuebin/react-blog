@@ -88,13 +88,14 @@
 
 .blog-rightsider-tagcard-content a{
   display: inline-block;
-  line-height: 30px;
-  border:1px solid rgba(0, 0, 0, 0.35);
   padding:0px 10px;
   margin:5px 5px;
+  font-size: 16px;
+  line-height: 30px;
+  border:1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
   color:rgba(0, 0, 0, 0.65);
   text-decoration: none;
-  font-size: 16px;
 }
 
 .blog-rightsider-tagcard-content a:hover{
