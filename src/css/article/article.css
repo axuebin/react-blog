@@ -67,13 +67,9 @@
 }
 
 .article-detail blockquote {
-  height: 30px;
-  font-size: 1.2em;
-  line-height: 30px;
-  padding-left: 10px;
+  padding: 1px 10px;
   border-left: 2px solid black;
   background: rgb(200, 200, 200);
-  color: black;
 }
 
 .article-content p code, .article-content ul code {
