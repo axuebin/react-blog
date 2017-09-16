@@ -31,23 +31,7 @@ export default class LabelCard extends React.Component {
         }
       }
     }
-
-    const tagLinkList = tagList.map((item) => {
-      const style = {
-        fontSize: 16,
-      };
-      if (item.sum > 1) {
-        const radio = item.sum * 2;
-        const fontSize = style.fontSize + radio;
-        if (fontSize < 30) {
-          style.fontSize = fontSize;
-        } else {
-          style.fontSize = 30;
-        }
-      }
-      return (<Link key={item.id} to={`/blog/tag/${item.url}`} style={style} >{item.name}</Link>);
-    });
-
+    const tagLinkList = tagList.sort((a, b) => b.sum - a.sum).map(item => <Link key={item.id} to={`/blog/tag/${item.url}`}>{item.name} ({item.sum})</Link>);
     return (
       <div className="blog-rightsider-tagcard">
         <div className="blog-rightsider-tagcard-title"><Icon type="tag-o" /> 标签</div>
