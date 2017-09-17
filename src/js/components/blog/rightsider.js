@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import CategoryCard from './categorycard';
 import LabelCard from './labelcard';
+import '../../../css/blog/rightsider.css';
 
 const ArchiveCard = () => (
   <div className="blog-rightsider-archive">
