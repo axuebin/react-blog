@@ -31,7 +31,8 @@ export default class CategoryCard extends React.Component {
       }
     }
 
-    const categoryLinkList = categoryList.sort((a, b) => b.sum - a.sum).map(item => <Link key={item.id} to={`/blog/category/${item.url}`}><li key={item.id}>{item.name}<span>{item.sum}</span></li></Link>);
+    const categoryLinkList = categoryList.sort((a, b) => b.sum - a.sum).map(
+      item => <Link key={item.id} to={`/blog/category/${item.url}`}><li key={item.id}>{item.name}<span>{item.sum}</span></li></Link>);
 
     return (
       <div className="rightsider-card">
