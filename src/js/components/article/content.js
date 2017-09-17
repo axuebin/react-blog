@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import marked from 'marked';
 import hljs from 'highlight.js';
-import '../../../css/article/article.css';
 
 export default class ArticleContent extends React.Component {
   componentWillMount() {

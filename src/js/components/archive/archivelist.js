@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ArchiveItemList from './archiveitemlist';
-import '../../../css/archive/archive.css';
 
 export default class ArchiveList extends React.Component {
   constructor() {

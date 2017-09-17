@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { COLOR_LABEL_BLOG, COLOR_LABEL_CATEGORY } from '../../constants/config';
 import ArticleLabel from './articlelabel';
-import '../../../css/blog/articlearea.css';
 
 export default class ArticleItem extends React.Component {
   render() {

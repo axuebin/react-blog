@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ArticleItem from './articleitem';
-import '../../../css/blog/articlearea.css';
 
 export default class ArticleList extends React.Component {
   render() {

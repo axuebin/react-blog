@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Icon } from 'antd';
 import { Link } from 'react-router-dom';
 import { COLOR_LABEL_CATEGORY } from '../../constants/config';
-import '../../../css/blog/rightsider.css';
 
 export default class CategoryCard extends React.Component {
   render() {

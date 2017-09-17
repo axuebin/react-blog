@@ -12,6 +12,7 @@ export default class HomeBanner extends React.Component {
           <div className="home-banner-desc">
             <h1>薛彬</h1>
             <p>一个正在努力的程序猿及摄影爱好者</p>
+            <p>分享编码和摄影</p>
             <div className="home-banner-link">
               <div className="link">
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/axuebin">Github</a>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import '../../../css/blog/articlearea.css';
 
 export default class ArticleLabel extends React.Component {
   render() {

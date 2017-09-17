@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../css/blog/articlearea.css';
 
 export default class ArticlePaging extends React.Component {
   render() {

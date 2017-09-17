@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ArticleListItem from './articlelistitem';
 import { COLOR_LABEL_CATEGORY } from '../../constants/config';
-import '../../../css/category/category.css';
 
 export default class ArticleList extends React.Component {
   constructor() {

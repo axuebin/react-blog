@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ArticleList from './articlelist';
 import ArticlePaging from './articlepaging';
-import '../../../css/blog/articlearea.css';
 
 const ArticleBanner = () => (
   <div className="blog-article-banner">

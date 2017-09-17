@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from 'antd';
-import '../../../css/archive/archive.css';
 
 export default class YearCard extends React.Component {
   constructor() {
