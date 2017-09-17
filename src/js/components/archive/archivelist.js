@@ -15,7 +15,9 @@ export default class ArchiveList extends React.Component {
     for (let i = 0; i < len; i += 1) {
       const time = parseInt(issues[i].updated_at.substring(0, 4), 10);
       if (time !== year) {
-        articles[time] = [];
+        if (!articles[time]) {
+          articles[time] = [];
+        }
         year = time;
       }
       articles[time].push(issues[i]);

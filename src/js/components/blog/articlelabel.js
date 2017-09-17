@@ -10,20 +10,20 @@ export default class ArticleLabel extends React.Component {
     };
     return (
       <div className="blog-article-label" style={style}>
-        <Link to={`/blog/label/${this.props.id}`}>{this.props.name}</Link>
+        <Link to={`/blog/${this.props.type}/${this.props.name}`}>{this.props.name}</Link>
       </div>
     );
   }
 }
 
 ArticleLabel.defaultProps = {
-  id: 'id',
-  name: 'name',
+  type: 'category',
+  name: '前端',
   color: 'blue',
 };
 
 ArticleLabel.propTypes = {
-  id: PropTypes.number,
+  type: PropTypes.string,
   name: PropTypes.string,
   color: PropTypes.string,
 };

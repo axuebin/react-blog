@@ -10,13 +10,13 @@ export default class ArticleItem extends React.Component {
   render() {
     const category = this.props.labels.map((item) => {
       if (item.color === COLOR_LABEL_CATEGORY) {
-        return <ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} />;
+        return <ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} type="category" />;
       }
       return null;
     });
     const labelList = this.props.labels.map((item) => {
       if (item.color !== COLOR_LABEL_BLOG && item.color !== COLOR_LABEL_CATEGORY) {
-        return <ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} />;
+        return <ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} type="tag" />;
       }
       return null;
     });
