@@ -14,7 +14,7 @@
 .demo-democard-title{
   height:50px;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 1.2em;
   color: black;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.65);
@@ -42,7 +42,7 @@
   height:50px;
   display: flex;
   line-height: 50px;
-  font-size: 16px;
+  font-size: 1.2em;
 }
 
 .demo-democard-desc a{

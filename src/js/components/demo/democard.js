@@ -5,7 +5,7 @@ export default class DemoCard extends React.Component {
   render() {
     return (
       <div className="demo-democard">
-        <div className="demo-democard-title"><a target="_blank" rel="noopener noreferrer" href={this.props.url}>{this.props.name}</a></div>
+        <div className="demo-democard-title">{this.props.name}</div>
         <div className="demo-democard-img">
           <img src={this.props.img} alt="TodoList" />
         </div>
@@ -19,7 +19,6 @@ export default class DemoCard extends React.Component {
 }
 
 DemoCard.defaultProps = {
-  url: 'url',
   name: 'name',
   img: 'img',
   demo: 'demo',
@@ -27,7 +26,6 @@ DemoCard.defaultProps = {
 };
 
 DemoCard.propTypes = {
-  url: PropTypes.string,
   name: PropTypes.string,
   img: PropTypes.string,
   demo: PropTypes.string,
