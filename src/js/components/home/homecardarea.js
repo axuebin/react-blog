@@ -22,7 +22,7 @@ export default class HomeCardArea extends React.Component {
           const articleTemp = {};
           articleTemp.title = data[i].title;
           articleTemp.id = data[i].number;
-          articleTemp.url = `/blog/${data[i].number}`;
+          articleTemp.url = `/blog/article/${data[i].number}`;
           articleList.push(articleTemp);
         }
 
