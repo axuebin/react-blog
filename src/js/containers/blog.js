@@ -6,7 +6,6 @@ import Article from '../components/article/article';
 import Archive from '../components/archive/archive';
 import Tag from '../components/tag/tag';
 import Category from '../components/category/category';
-import '../../css/blog/blog.css';
 
 export default class Blog extends React.Component {
   componentDidMount() {

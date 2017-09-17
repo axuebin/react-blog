@@ -13,7 +13,7 @@ export default class App extends React.Component {
       <HashRouter>
         <div>
           <HomeHeader />
-          <div className="main">
+          <div className="middle">
             <Route exact path="/" component={Home} />
             <Route path="/blog" component={Blog} />
             <Route path="/demo" component={Demo} />

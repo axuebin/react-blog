@@ -1,22 +1,4 @@
 @import '~highlight.js/styles/atom-one-dark.css';
-.article {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(50, 50, 50);
-}
-
-.article-container {
-  width: 90%;
-  height: auto;
-  min-height: 100%;
-  overflow: hidden;
-  margin: 50px 0px;
-}
-
-.article-content {
-  background-color: rgb(255, 255, 255);
-}
 
 .article-title {
   width: 100%;
@@ -72,7 +54,7 @@
   background: rgb(200, 200, 200);
 }
 
-.article-content p code, .article-content ul code {
+.article-detail p code, .article-detail ul code {
   display: inline-block;
   margin: 0 2px;
   padding: 0 4px;
@@ -83,7 +65,7 @@
   border: 1px solid #ddd;
 }
 
-.article-content pre code {
+.article-detail pre code {
   display: block;
   margin: 20px 0px;
   overflow-x: auto;
@@ -118,12 +100,4 @@
 
 .article-detail table>tbody>tr:nth-child(odd)>td, .article-detail table>tbody>tr:nth-child(odd)>th {
   background-color: #f9f9f9;
-}
-
-.article-navigation {
-  width: 95%;
-  height: 300px;
-  margin-left: 30px;
-  background-color: white;
-  color: black;
 }

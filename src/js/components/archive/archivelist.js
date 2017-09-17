@@ -32,7 +32,7 @@ export default class ArchiveList extends React.Component {
       }
     });
     return (
-      <div className="archive-area">
+      <div className="archive-list-area">
         <div className="archive-list">
           {articleList}
         </div>

@@ -7,7 +7,7 @@ export default class ArticleListItem extends React.Component {
     const category = this.props.category;
     const titleList = this.props.items.map(item => <li key={item.number}>{item.updated_at.split('T')[0]}<Link key={item.number} to={`/blog/article/${item.number}`}>{item.title}</Link></li>);
     return (
-      <div className="category-itemlist">
+      <div className="archive-itemlist">
         <h2>{category}</h2>
         <ul>
           {titleList}

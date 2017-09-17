@@ -17,8 +17,8 @@ class Archive extends React.Component {
       return null;
     }
     return (
-      <div className="archive">
-        <div className="archive-container">
+      <div className="main">
+        <div className="main-container">
           <Row>
             <Col span={18}><ArchiveList issues={this.props.items} /></Col>
             <Col span={6}><YearCard issues={this.props.items} /></Col>

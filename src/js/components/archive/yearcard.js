@@ -29,10 +29,10 @@ export default class YearCard extends React.Component {
   render() {
     const yearList = this.getYearSum(this.props.issues).map(item => <li key={item.year}>{item.year}<span>{item.sum}</span></li>);
     return (
-      <div className="archive-rightsider">
-        <div className="archive-rightsider-yearcard">
-          <div className="archive-rightsider-yearcard-title"><Icon type="bars" /> 统计</div>
-          <div className="archive-rightsider-yearcard-content">
+      <div className="rightsider">
+        <div className="rightsider-card">
+          <div className="rightsider-card-title"><Icon type="bars" /> 统计</div>
+          <div className="rightsider-card-content">
             {yearList}
           </div>
         </div>

@@ -1,20 +1,8 @@
-.demo{
-  width:100%;
-  display: flex;
-  justify-content:center;
-  background-color: rgb(50,50,50);
-}
-
 .demo-container{
-  width:90%;
-  height:auto;
-  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
-  margin: 50px 0px;
 }
-
 .demo-democard{
   width:24%;
   max-width: 400px;

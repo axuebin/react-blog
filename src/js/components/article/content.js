@@ -12,14 +12,16 @@ export default class ArticleContent extends React.Component {
 
   render() {
     return (
-      <div className="article-content">
-        <div className="article-title">
-          <h2>{this.props.title}</h2>
+      <div className="archive-list-area">
+        <div className="archive-list">
+          <div className="article-title">
+            <h2>{this.props.title}</h2>
+          </div>
+          <div className="article-time">
+            {this.props.time.split('T')[0]}
+          </div>
+          <div className="article-detail" dangerouslySetInnerHTML={{ __html: marked(this.props.content) }} />
         </div>
-        <div className="article-time">
-          {this.props.time.split('T')[0]}
-        </div>
-        <div className="article-detail" dangerouslySetInnerHTML={{ __html: marked(this.props.content) }} />
       </div>
     );
   }

@@ -36,10 +36,10 @@ export default class TagCard extends React.Component {
     const tagList = this.getTagSum(this.props.issues).sort((a, b) => b.sum - a.sum).map(
       item => <li key={item.tag}>{item.tag}<span>{item.sum}</span></li>);
     return (
-      <div className="tag-rightsider">
-        <div className="tag-rightsider-tagcard">
-          <div className="tag-rightsider-tagcard-title"><Icon type="bars" /> 统计</div>
-          <div className="tag-rightsider-tagcard-content">
+      <div className="rightsider">
+        <div className="rightsider-card">
+          <div className="rightsider-card-title"><Icon type="bars" /> 统计</div>
+          <div className="rightsider-card-content">
             {tagList}
           </div>
         </div>

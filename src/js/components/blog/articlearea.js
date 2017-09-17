@@ -14,7 +14,7 @@ const ArticleBanner = () => (
 export default class ArticleArea extends React.Component {
   render() {
     return (
-      <div className="blog-article-area">
+      <div className="archive-list-area">
         <ArticleBanner />
         <ArticleList issues={this.props.issues} />
         <ArticlePaging />

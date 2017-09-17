@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { fetchIssuesIfNeeded } from '../../actions/index';
 import ArticleList from './articlelist';
 import TagCard from './tagcard';
-import '../../../css/tag/tag.css';
+import '../../../css/archive/archive.css';
 
 class Tag extends React.Component {
   componentDidMount() {
@@ -17,8 +17,8 @@ class Tag extends React.Component {
       return null;
     }
     return (
-      <div className="tag">
-        <div className="tag-container">
+      <div className="main">
+        <div className="main-container">
           <Row>
             <Col span={18}><ArticleList issues={this.props.items} /></Col>
             <Col span={6}><TagCard issues={this.props.items} /></Col>

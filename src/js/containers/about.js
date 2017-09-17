@@ -7,8 +7,8 @@ export default class About extends React.Component {
   }
   render() {
     return (
-      <div className="about" ref={node => this.node = node} >
-        <div className="about-container">
+      <div className="main" ref={node => this.node = node} >
+        <div className="main-container about-container">
           <div className="about-detial about-desc">
             <h1>关于我</h1>
             <ul>

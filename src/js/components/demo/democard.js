@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import '../../../css/demo/demo.css';
 
 export default class DemoCard extends React.Component {
   render() {

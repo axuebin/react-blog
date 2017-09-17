@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { fetchIssuesIfNeeded } from '../../actions/index';
 import ArticleList from './articlelist';
 import CategoryCard from './categorycard';
-import '../../../css/category/category.css';
+import '../../../css/archive/archive.css';
 
 class Category extends React.Component {
   componentDidMount() {
@@ -17,8 +17,8 @@ class Category extends React.Component {
       return null;
     }
     return (
-      <div className="category">
-        <div className="category-container">
+      <div className="main">
+        <div className="main-container">
           <Row>
             <Col span={18}><ArticleList issues={this.props.items} /></Col>
             <Col span={6}><CategoryCard issues={this.props.items} /></Col>

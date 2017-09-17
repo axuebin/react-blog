@@ -12,8 +12,8 @@ export default class Blog extends React.Component {
   }
   render() {
     return (
-      <div className="demo" ref={node => this.node = node} >
-        <div className="demo-container">
+      <div className="main" ref={node => this.node = node} >
+        <div className="main-container demo-container">
           {democardList}
         </div>
       </div>

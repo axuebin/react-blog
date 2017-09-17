@@ -36,10 +36,10 @@ export default class CategoryCard extends React.Component {
     const categoryList = this.getCategorySum(this.props.issues).sort((a, b) => b.sum - a.sum).map(
       item => <li key={item.category}>{item.category}<span>{item.sum}</span></li>);
     return (
-      <div className="category-rightsider">
-        <div className="category-rightsider-categorycard">
-          <div className="category-rightsider-categorycard-title"><Icon type="bars" /> 统计</div>
-          <div className="category-rightsider-categorycard-content">
+      <div className="rightsider">
+        <div className="rightsider-card">
+          <div className="rightsider-card-title"><Icon type="bars" /> 统计</div>
+          <div className="rightsider-card-content">
             {categoryList}
           </div>
         </div>

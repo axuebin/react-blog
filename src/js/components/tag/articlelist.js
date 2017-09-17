@@ -41,8 +41,8 @@ export default class ArticleList extends React.Component {
       }
     });
     return (
-      <div className="tag-area">
-        <div className="tag-list">
+      <div className="archive-list-area">
+        <div className="archive-list">
           {articleList}
         </div>
       </div>

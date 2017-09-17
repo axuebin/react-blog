@@ -22,8 +22,8 @@ export default class Article extends React.Component {
   }
   render() {
     return (
-      <div className="article">
-        <div className="article-container">
+      <div className="main">
+        <div className="main-container">
           <Row>
             <Col span={18}>{this.state.articleContent}</Col>
             <Col span={6}>{this.state.articleNavigation}</Col>
