@@ -82,8 +82,36 @@
 .blog-article-paging {
   width: 98%;
   height: 50px;
-  line-height: 50px;
   font-size: 1.3em;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(255, 255, 255);
+}
+
+.ant-pagination-item:hover{
+  border-color:rgb(50,50,50);
+}
+
+.ant-pagination-item:hover a{
+  color:rgb(50,50,50);
+}
+
+.ant-pagination-item-active{
+  background-color: rgb(50,50,50);
+  border-color:rgb(50,50,50);
+}
+
+.ant-pagination-item-active:focus, .ant-pagination-item-active:hover{
+  background-color: rgb(50,50,50);
+  border-color:rgb(50,50,50);
+}
+
+.ant-pagination-item-active:focus, .ant-pagination-item-active:hover a{
+  color:rgb(255,255,255);
+}
+
+ .ant-pagination-prev:hover, .ant-pagination-next:hover{
+  color:rgb(50,50,50);
+  border-color:rgb(50,50,50);
 }

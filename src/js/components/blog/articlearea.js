@@ -12,12 +12,28 @@ const ArticleBanner = () => (
 );
 
 export default class ArticleArea extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      currentPage: 1,
+      defaultPageSize: 5,
+    };
+    this.handlePageChange = this.handlePageChange.bind(this);
+  }
+
+  handlePageChange(pageNumber) {
+    this.setState({ currentPage: pageNumber });
+  }
+
   render() {
+    if (this.props.issues.length === 0) {
+      return null;
+    }
     return (
       <div className="archive-list-area">
         <ArticleBanner />
-        <ArticleList issues={this.props.issues} />
-        <ArticlePaging />
+        <ArticleList issues={this.props.issues} defaultPageSize={this.state.defaultPageSize} pageNumber={this.state.currentPage} />
+        <ArticlePaging handlePageChange={this.handlePageChange} total={this.props.issues.length} defaultPageSize={this.state.defaultPageSize} />
       </div>
     );
   }
