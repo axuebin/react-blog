@@ -80,13 +80,14 @@
 }
 
 .article-detail table {
+  width：100%;
   border: 1px solid;
   font-size: 1.2em;
   border-collapse: collapse;
 }
 
 .article-detail p>img {
-  max-width: 100%;
+  max-width: 80%;
   display: block;
   margin: 0 auto;
 }
