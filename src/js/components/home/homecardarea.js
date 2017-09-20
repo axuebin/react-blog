@@ -29,15 +29,15 @@ export default class HomeCardArea extends React.Component {
         const demoList = [{
           id: 1,
           title: 'React实现的TodoList',
-          url: 'http://axuebin.com/react-todolist',
+          url: '/demo',
         }, {
           id: 2,
           title: 'React实现的列车站点查询',
-          url: 'http://axuebin.com/train-query',
+          url: '/demo',
         }, {
           id: 3,
           title: 'React实现的flex布局在线可视化',
-          url: 'http://axuebin.com/flex-study',
+          url: '/demo',
         }];
 
         const aboutList = [{
