@@ -26,8 +26,8 @@ export default class Article extends React.Component {
       <div className="main" ref={node => this.node = node} >
         <div className="main-container">
           <Row>
-            <Col span={18}>{this.state.articleContent}</Col>
-            <Col span={6}>{this.state.articleNavigation}</Col>
+            <Col xs={24} sm={24} md={18}>{this.state.articleContent}</Col>
+            <Col xs={0} sm={0} md={6}>{this.state.articleNavigation}</Col>
           </Row>
         </div>
       </div>

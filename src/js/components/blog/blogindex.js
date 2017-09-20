@@ -19,8 +19,8 @@ class BlogIndex extends React.Component {
       <div className="main">
         <div className="main-container">
           <Row>
-            <Col span={18}><ArticleArea issues={this.props.items} /></Col>
-            <Col span={6}><RightSider issues={this.props.items} /></Col>
+            <Col xs={24} sm={24} md={18}><ArticleArea issues={this.props.items} /></Col>
+            <Col xs={0} sm={0} md={6}><RightSider issues={this.props.items} /></Col>
           </Row>
         </div>
       </div>
