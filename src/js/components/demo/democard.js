@@ -7,7 +7,7 @@ export default class DemoCard extends React.Component {
       <div className="demo-democard">
         <div className="demo-democard-title">{this.props.name}</div>
         <div className="demo-democard-img">
-          <img src={this.props.img} alt="TodoList" />
+          <img src={this.props.img} alt={this.props.name} />
         </div>
         <div className="demo-democard-desc">
           <a target="_blank" rel="noopener noreferrer" href={this.props.demo}>演示地址</a>

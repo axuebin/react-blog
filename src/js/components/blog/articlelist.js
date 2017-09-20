@@ -9,7 +9,7 @@ export default class ArticleList extends React.Component {
     const currentPage = this.props.pageNumber;
     const defaultPageSize = this.props.defaultPageSize;
     const start = currentPage === 1 ? 0 : (currentPage - 1) * defaultPageSize;
-    const end = start + defaultPageSize < issues.length ? start + 5 : issues.length;
+    const end = start + defaultPageSize < issues.length ? start + defaultPageSize : issues.length;
     for (let i = start; i < end; i += 1) {
       const item = issues[i];
       articlelist.push(<ArticleItem key={item.id} number={item.number} title={item.title} labels={item.labels} time={item.updated_at} desc={item.body} />);

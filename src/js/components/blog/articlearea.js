@@ -16,7 +16,7 @@ export default class ArticleArea extends React.Component {
     super();
     this.state = {
       currentPage: 1,
-      defaultPageSize: 5,
+      defaultPageSize: 8,
     };
     this.handlePageChange = this.handlePageChange.bind(this);
   }

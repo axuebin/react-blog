@@ -49,7 +49,7 @@ export default class Navigation extends React.Component {
         level3Temp.children.push(level4Temp);
       }
     }
-    const menuList = menuObj.map(level2 => (<li key={level2.id}>{level2.title}
+    return menuObj.map(level2 => (<li key={level2.id}>{level2.title}
       <ul>
         {level2.children.map(level3 => (<li key={level3.id}>{level3.title}
           <ul>
@@ -58,7 +58,6 @@ export default class Navigation extends React.Component {
         </li>))}
       </ul>
     </li>));
-    return menuList;
   }
 
   render() {
