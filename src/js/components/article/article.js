@@ -13,6 +13,7 @@ export default class Article extends React.Component {
     };
   }
   componentDidMount() {
+    this.node.scrollIntoView();
     const url = `https://api.github.com/repos/axuebin/react-blog/issues/${this.props.match.params.number}`;
     fetch(url).then(response => response.json()).then((data) => {
       const articleContent = <ArticleContent title={data.title} time={data.updated_at} content={data.body} />;
@@ -22,7 +23,7 @@ export default class Article extends React.Component {
   }
   render() {
     return (
-      <div className="main">
+      <div className="main" ref={node => this.node = node} >
         <div className="main-container">
           <Row>
             <Col span={18}>{this.state.articleContent}</Col>

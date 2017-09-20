@@ -33,7 +33,7 @@
 
 .rightsider-card{
   width: 100%;
-  height:500px;
+  min-height:500px;
   margin-bottom: 10px;
   background-color: rgb(255, 255, 255);
 }

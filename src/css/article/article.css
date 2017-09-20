@@ -1,5 +1,4 @@
 @import '~highlight.js/styles/atom-one-dark.css';
-
 .article-title {
   width: 100%;
   height: 100px;
@@ -101,4 +100,17 @@
 
 .article-detail table>tbody>tr:nth-child(odd)>td, .article-detail table>tbody>tr:nth-child(odd)>th {
   background-color: #f9f9f9;
+}
+
+.article-navigation-content {
+  padding-left: 20px;
+}
+
+.article-navigation-content ul {
+  padding: 5px;
+}
+
+.article-navigation-content li {
+  margin-left: 20px;
+  list-style-type: disc;
 }
