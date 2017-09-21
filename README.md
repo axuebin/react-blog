@@ -9,19 +9,21 @@
 
 * [x] 静态页面
 * [x] 整理目录结构
-* [ ] Redux管理数据
-* [ ] react-router路由
 * [x] Github issus作文章数据源
 * [x] react-markdown渲染md
 * [x] 代码高亮
 * [x] 摘要
-* [ ] 回到顶部
 * [x] 分类
 * [x] 标签
 * [x] 翻页功能
 * [x] 首页卡片
 * [x] Demo页面
+* [ ] 评论功能
+* [ ] 回到顶部
+* [ ] Redux管理数据
+* [ ] react-router路由
 * [ ] 整理代码
+* [ ] 渲染优化，打包优化
 
 ### Update Log
 
