@@ -24,6 +24,8 @@
 * [ ] react-router路由
 * [ ] 整理代码
 * [ ] 渲染优化，打包优化
+* [ ] 适配移动端
+* [ ] React Native App
 
 ### Update Log
 
