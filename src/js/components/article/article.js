@@ -16,7 +16,7 @@ export default class Article extends React.Component {
     this.node.scrollIntoView();
     const url = `https://api.github.com/repos/axuebin/react-blog/issues/${this.props.match.params.number}`;
     fetch(url).then(response => response.json()).then((data) => {
-      const articleContent = <ArticleContent title={data.title} time={data.updated_at} content={data.body} />;
+      const articleContent = <ArticleContent number={data.number} title={data.title} time={data.updated_at} content={data.body} />;
       const articleNavigation = <ArticleNavigation content={data.body} />;
       this.setState({ articleContent, articleNavigation });
     }).catch(e => console.log(e));

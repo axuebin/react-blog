@@ -114,3 +114,20 @@
   margin-left: 20px;
   list-style-type: disc;
 }
+
+.article-comment-box{
+  width: 98%;
+  height: 50px;
+  font-size: 1.3em;
+  border-top: 1px solid rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.article-comment-box a{
+  text-decoration: none;
+  color:black;
+}
