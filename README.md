@@ -18,7 +18,7 @@
 * [x] 翻页功能
 * [x] 首页卡片
 * [x] Demo页面
-* [ ] 评论功能
+* [x] 评论功能（跳转到Github Issues页面。。）
 * [ ] 回到顶部
 * [ ] Redux管理数据
 * [ ] react-router路由
@@ -61,3 +61,5 @@
 - Expected 'this' to be used by class method。建议使用static，但是用了static之后bind会出错。。暂时关闭这个rule。。
 - 现在很多模块和css是重复的，需要整理代码。。
 - 文章内部目录的实现待优化，暂时也无法实现点击跳转
+- 首页渲染优化的问题
+- 本来想的在文章底部增加评论框，直接调用Github API创建评论和获取评论列表，但是发现需要登录授权，暂缓
