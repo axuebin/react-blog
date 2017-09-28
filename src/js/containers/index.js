@@ -7,7 +7,7 @@ import Blog from '../containers/blog';
 import Demo from '../containers/demo';
 import About from '../containers/about';
 
-export default class App extends React.Component {
+export default class Index extends React.Component {
   render() {
     return (
       <HashRouter>
