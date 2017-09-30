@@ -18,7 +18,7 @@
 }
 
 .blog-article-item {
-  padding:30px 20px;
+  padding: 30px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.65);
   background-color: rgb(255, 255, 255);
 }
@@ -30,7 +30,7 @@
 
 .blog-article-item-title a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .blog-article-item-label {
@@ -53,7 +53,7 @@
 .blog-article-label a {
   padding: 8px;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   line-height: 2;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .blog-article-item-desc-more a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -89,29 +89,29 @@
   background-color: rgb(255, 255, 255);
 }
 
-.ant-pagination-item:hover{
-  border-color:rgb(50,50,50);
+.ant-pagination-item:hover {
+  border-color: rgb(50, 50, 50);
 }
 
-.ant-pagination-item:hover a{
-  color:rgb(50,50,50);
+.ant-pagination-item:hover a {
+  color: rgb(50, 50, 50);
 }
 
-.ant-pagination-item-active{
-  background-color: rgb(50,50,50);
-  border-color:rgb(50,50,50);
+.ant-pagination-item-active {
+  background-color: rgb(50, 50, 50);
+  border-color: rgb(50, 50, 50);
 }
 
-.ant-pagination-item-active:focus, .ant-pagination-item-active:hover{
-  background-color: rgb(50,50,50);
-  border-color:rgb(50,50,50);
+.ant-pagination-item-active:focus, .ant-pagination-item-active:hover {
+  background-color: rgb(50, 50, 50);
+  border-color: rgb(50, 50, 50);
 }
 
-.ant-pagination-item-active:focus, .ant-pagination-item-active:hover a{
-  color:rgb(255,255,255);
+.ant-pagination-item-active:focus, .ant-pagination-item-active:hover a {
+  color: rgb(255, 255, 255);
 }
 
- .ant-pagination-prev:hover, .ant-pagination-next:hover{
-  color:rgb(50,50,50);
-  border-color:rgb(50,50,50);
+.ant-pagination-prev:hover, .ant-pagination-next:hover {
+  color: rgb(50, 50, 50);
+  border-color: rgb(50, 50, 50);
 }

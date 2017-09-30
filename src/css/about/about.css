@@ -1,16 +1,16 @@
 .about-container {
-  padding:0px 50px;
+  padding: 0px 50px;
   background-color: rgb(255, 255, 255);
 }
 
-.about-detial{
+.about-detial {
   height: 40%;
   text-align: center;
   max-height: 300px;
   margin: 20px 0px;
 }
 
-.about-detial ul{
+.about-detial ul {
   margin-top: 10px;
 }
 
@@ -21,5 +21,5 @@
 
 .about-detial a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }

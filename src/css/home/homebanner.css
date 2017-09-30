@@ -28,12 +28,12 @@
   height: 60%;
   margin-top: 10px;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .home-banner-desc h1 {
   font-size: 30px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .home-banner-desc p {
@@ -56,10 +56,10 @@
 }
 
 .home-banner-link a {
-  color: #13daec;
+  color: rgb(19, 218, 236);
   text-decoration: none;
 }
 
 .home-banner-link a:hover {
-  color: #71e9f4;
+  color: rgb(113, 233, 244);
 }

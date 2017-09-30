@@ -1,22 +1,22 @@
-.archive-itemlist{
+.archive-itemlist {
   padding: 20px;
 }
 
-.archive-itemlist h2{
+.archive-itemlist h2 {
   font-size: 1.8em;
 }
 
-.archive-itemlist ul{
+.archive-itemlist ul {
   margin-top: 10px;
 }
 
-.archive-itemlist li{
+.archive-itemlist li {
   font-size: 1.3em;
   margin-top: 5px;
 }
 
-.archive-itemlist a{
-  color:black;
+.archive-itemlist a {
+  color: rgb(0, 0, 0);
   margin-left: 10px;
   text-decoration: none;
 }

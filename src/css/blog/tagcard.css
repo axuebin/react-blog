@@ -8,11 +8,11 @@
   transition: transform 0.25s ease;
 }
 
-.blog-rightsider-archive a{
+.blog-rightsider-archive a {
   display: block;
   font-size: 20px;
   text-decoration: none;
-  color:black;
+  color: rgb(0, 0, 0);
 }
 
 .blog-rightsider-archive:hover {
@@ -22,32 +22,32 @@
   -moz-transform: scale(1.1);
 }
 
-.blog-tagcard-title{
-  height:50px;
+.blog-tagcard-title {
+  height: 50px;
   line-height: 50px;
   text-align: center;
   font-size: 20px;
-  color:black;
+  color: rgb(0, 0, 0);
   border-bottom: 1px solid rgba(0, 0, 0, 0.65);
 }
 
-.blog-tagcard-content{
+.blog-tagcard-content {
   padding: 20px;
 }
 
-.blog-tagcard-content a{
+.blog-tagcard-content a {
   display: inline-block;
-  padding:0px 10px;
-  margin:5px 5px;
+  padding: 0px 10px;
+  margin: 5px 5px;
   font-size: 16px;
   line-height: 30px;
-  border:1px solid rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(0, 0, 0, 0.35);
   border-radius: 5px;
-  color:rgba(0, 0, 0, 0.65);
+  color: rgba(0, 0, 0, 0.65);
   text-decoration: none;
 }
 
-.blog-tagcard-content a:hover{
+.blog-tagcard-content a:hover {
   background-color: rgba(0, 0, 0, 0.3);
-  color:rgba(255,255,255,1);
+  color: rgb(255, 255, 255);
 }

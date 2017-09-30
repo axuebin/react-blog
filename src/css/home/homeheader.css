@@ -14,19 +14,18 @@
   font-size: 20px;
 }
 
-.home-header-title a{
+.home-header-title a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-
 
 .home-header-subtitle {
   flex-grow: 1;
   font-size: 16px;
 }
 
-.home-header-subtitle p{
-  color: #9d9d9d;
+.home-header-subtitle p {
+  color: rgb(157, 157, 157);
   text-decoration: none;
 }
 
@@ -42,14 +41,14 @@
   font-size: 16px;
 }
 
-.home-header-nav-item a{
+.home-header-nav-item a {
   display: block;
-  color: #9d9d9d;
+  color: rgb(157, 157, 157);
   text-decoration: none;
 }
 
-.home-header-subtitle a:hover,.home-header-nav-item:hover a {
-  color:white
+.home-header-subtitle a:hover, .home-header-nav-item:hover a {
+  color: rgb(255, 255, 255);
 }
 
 .home-header-nav-item:hover {

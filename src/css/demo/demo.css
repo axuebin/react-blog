@@ -1,31 +1,32 @@
-.demo-container{
+.demo-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
-}
-.demo-democard{
-  width:24%;
-  max-width: 400px;
-  max-height:400px;
-  margin: 5px;
-  background-color: rgb(255,255,255);
+  justify-content: center;
 }
 
-.demo-democard-title{
-  height:50px;
+.demo-democard {
+  width: 24%;
+  max-width: 400px;
+  max-height: 400px;
+  margin: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+.demo-democard-title {
+  height: 50px;
   line-height: 50px;
   font-size: 1.2em;
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.65);
 }
 
-.demo-democard-title a{
+.demo-democard-title a {
   text-decoration: none;
-  color:black;
+  color: rgb(0, 0, 0);
 }
 
-.demo-democard-img{
+.demo-democard-img {
   height: 300px;
   display: flex;
   justify-content: center;
@@ -33,21 +34,21 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.65);
 }
 
-.demo-democard-img img{
+.demo-democard-img img {
   max-width: 100%;
   max-height: 100%;
 }
 
-.demo-democard-desc{
-  height:50px;
+.demo-democard-desc {
+  height: 50px;
   display: flex;
   line-height: 50px;
   font-size: 1.2em;
 }
 
-.demo-democard-desc a{
+.demo-democard-desc a {
   flex-grow: 1;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }

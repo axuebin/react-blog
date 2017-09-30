@@ -43,7 +43,7 @@
 }
 
 .article-detail li {
-  font-size: 1.2em;
+  font-size: 1em;
   list-style-type: disc;
 }
 
@@ -115,19 +115,18 @@
   list-style-type: disc;
 }
 
-.article-comment-box{
+.article-comment-box {
   width: 98%;
   height: 50px;
   font-size: 1.3em;
-  border-top: 1px solid rgba(0,0,0,0.65);
+  border-top: 1px solid rgba(0, 0, 0, 0.65);
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
 }
 
-
-.article-comment-box a{
+.article-comment-box a {
   text-decoration: none;
-  color:black;
+  color: rgb(0, 0, 0);
 }
