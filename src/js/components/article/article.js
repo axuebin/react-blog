@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import PropTypes from 'prop-types';
+import axios from 'axios';
 import ArticleContent from './content';
 import ArticleNavigation from './navigation';
 import '../../../css/article/article.css';
@@ -15,7 +16,8 @@ export default class Article extends React.Component {
   componentDidMount() {
     this.node.scrollIntoView();
     const url = `https://api.github.com/repos/axuebin/react-blog/issues/${this.props.match.params.number}`;
-    fetch(url).then(response => response.json()).then((data) => {
+    axios.get(url).then((response) => {
+      const data = response.data;
       const articleContent = <ArticleContent number={data.number} title={data.title} time={data.updated_at} content={data.body} />;
       const articleNavigation = <ArticleNavigation content={data.body} />;
       this.setState({ articleContent, articleNavigation });

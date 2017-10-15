@@ -1,26 +1,19 @@
-import fetch from 'isomorphic-fetch';
+import axios from 'axios';
 import { REQUEST_ISSUES, RECEIVE_ISSUES } from '../constants/actiontype';
 
-function requestIssues() {
-  return {
-    type: REQUEST_ISSUES,
-  };
-}
+const requestIssues = () => ({ type: REQUEST_ISSUES });
 
-function receiveIssues(json) {
-  return {
-    type: RECEIVE_ISSUES,
-    posts: json,
-  };
-}
+const receiveIssues = json => ({ type: RECEIVE_ISSUES, posts: json });
 
 function fetchIssues() {
   return (dispatch) => {
     dispatch(requestIssues());
-    return fetch('https://api.github.com/repos/axuebin/react-blog/issues?creator=axuebin&labels=blog')
-      .then(response => response.json())
-      .then(json => dispatch(receiveIssues(json)))
-      .catch(e => console.log(e));
+    return axios.get('https://api.github.com/repos/axuebin/react-blog/issues', {
+      params: {
+        creator: 'axuebin',
+        labels: 'blog',
+      },
+    }).then(response => dispatch(receiveIssues(response.data))).catch(e => console.log(e));
   };
 }
 
