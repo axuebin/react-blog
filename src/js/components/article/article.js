@@ -15,7 +15,7 @@ export default class Article extends React.Component {
   }
   componentDidMount() {
     this.node.scrollIntoView();
-    const url = `https://api.github.com/repos/axuebin/react-blog/issues/${this.props.match.params.number}`;
+    const url = `https://api.github.com/repos/axuebin/articles/issues/${this.props.match.params.number}`;
     axios.get(url).then((response) => {
       const data = response.data;
       const articleContent = <ArticleContent number={data.number} title={data.title} time={data.updated_at} content={data.body} />;

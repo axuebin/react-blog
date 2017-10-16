@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ArticleListItem from './articlelistitem';
-import { COLOR_LABEL_BLOG, COLOR_LABEL_CATEGORY } from '../../constants/config';
+import { COLOR_LABEL_CATEGORY } from '../../constants/config';
 
 export default class ArticleList extends React.Component {
   constructor() {
@@ -15,7 +15,7 @@ export default class ArticleList extends React.Component {
     for (let i = 0; i < len; i += 1) {
       const labels = issues[i].labels;
       for (let j = 0; j < labels.length; j += 1) {
-        if (labels[j].color !== COLOR_LABEL_BLOG && labels[j].color !== COLOR_LABEL_CATEGORY) {
+        if (labels[j].color !== COLOR_LABEL_CATEGORY) {
           const tag = labels[j].name;
           if (name !== tag) {
             if (!articles[tag]) {

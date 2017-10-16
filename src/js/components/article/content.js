@@ -19,7 +19,7 @@ export default class ArticleContent extends React.Component {
   }
 
   render() {
-    const commentUrl = `https://github.com/axuebin/react-blog/issues/${this.props.number}`;
+    const commentUrl = `https://github.com/axuebin/articles/issues/${this.props.number}`;
     return (
       <div className="archive-list-area">
         <div className="archive-list">

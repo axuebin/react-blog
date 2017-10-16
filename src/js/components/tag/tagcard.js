@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from 'antd';
-import { COLOR_LABEL_BLOG, COLOR_LABEL_CATEGORY } from '../../constants/config';
+import { COLOR_LABEL_CATEGORY } from '../../constants/config';
 
 export default class TagCard extends React.Component {
   constructor() {
@@ -14,7 +14,7 @@ export default class TagCard extends React.Component {
     for (let i = 0; i < issues.length; i += 1) {
       const labels = issues[i].labels;
       for (let j = 0; j < labels.length; j += 1) {
-        if (labels[j].color !== COLOR_LABEL_BLOG && labels[j].color !== COLOR_LABEL_CATEGORY) {
+        if (labels[j].color !== COLOR_LABEL_CATEGORY) {
           const tag = labels[j].name;
           if (tagHash[tag] === undefined) {
             tagHash[tag] = true;

@@ -2,23 +2,21 @@ import React from 'react';
 import { Icon } from 'antd';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { COLOR_LABEL_BLOG, COLOR_LABEL_CATEGORY } from '../../constants/config';
+import { COLOR_LABEL_CATEGORY } from '../../constants/config';
 import ArticleLabel from './articlelabel';
 
 export default class ArticleItem extends React.Component {
   render() {
-    const category = this.props.labels.map((item) => {
+    const category = [];
+    const labelList = [];
+    for (let i = 0; i < this.props.labels.length; i += 1) {
+      const item = this.props.labels[i];
       if (item.color === COLOR_LABEL_CATEGORY) {
-        return <ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} type="category" />;
+        category.push(<ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} type="category" />);
+      } else {
+        labelList.push(<ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} type="tag" />);
       }
-      return null;
-    });
-    const labelList = this.props.labels.map((item) => {
-      if (item.color !== COLOR_LABEL_BLOG && item.color !== COLOR_LABEL_CATEGORY) {
-        return <ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} type="tag" />;
-      }
-      return null;
-    });
+    }
     const time = this.props.time.split('T')[0];
     return (
       <div className="blog-article-item">
