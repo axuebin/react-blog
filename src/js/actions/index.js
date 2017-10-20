@@ -11,6 +11,7 @@ function fetchIssues() {
     return axios.get('https://api.github.com/repos/axuebin/articles/issues', {
       params: {
         creator: 'axuebin',
+        labels: 'blog',
       },
     }).then(response => dispatch(receiveIssues(response.data))).catch(e => console.log(e));
   };

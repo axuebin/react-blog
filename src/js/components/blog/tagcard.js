@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from 'antd';
 import { Link } from 'react-router-dom';
-import { COLOR_LABEL_CATEGORY } from '../../constants/config';
+import { COLOR_BLOG_CATEGORY, COLOR_LABEL_CATEGORY } from '../../constants/config';
 import '../../../css/blog/tagcard.css';
 
 export default class TagCard extends React.Component {
@@ -14,7 +14,7 @@ export default class TagCard extends React.Component {
     for (let i = 0; i < issues.length; i += 1) {
       for (let j = 0; j < issues[i].labels.length; j += 1) {
         const label = issues[i].labels[j];
-        if (label.color !== COLOR_LABEL_CATEGORY) {
+        if (label.color !== COLOR_BLOG_CATEGORY && label.color !== COLOR_LABEL_CATEGORY) {
           const id = label.id;
           const name = label.name;
           if (tagHash[name] === undefined) {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from 'antd';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { COLOR_LABEL_CATEGORY } from '../../constants/config';
+import { COLOR_BLOG_CATEGORY, COLOR_LABEL_CATEGORY } from '../../constants/config';
 import ArticleLabel from './articlelabel';
 
 export default class ArticleItem extends React.Component {
@@ -13,7 +13,7 @@ export default class ArticleItem extends React.Component {
       const item = this.props.labels[i];
       if (item.color === COLOR_LABEL_CATEGORY) {
         category.push(<ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} type="category" />);
-      } else {
+      } else if (item.color !== COLOR_BLOG_CATEGORY) {
         labelList.push(<ArticleLabel key={item.id} id={item.id} name={item.name} color={item.color} type="tag" />);
       }
     }

@@ -17,6 +17,7 @@ export default class HomeCardArea extends React.Component {
     axios.get('https://api.github.com/repos/axuebin/articles/issues', {
       params: {
         creator: 'axuebin',
+        labels: 'blog',
       },
     }).then((response) => {
       const data = response.data;
