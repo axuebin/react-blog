@@ -1,0 +1,14 @@
+@import '../../static/style/color.scss';
+
+.index-page {
+  width: 100%;
+  flex: 1;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

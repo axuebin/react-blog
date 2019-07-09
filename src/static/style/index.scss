@@ -8,6 +8,13 @@ html {
   font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
 }
 
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $level1;
+}
+
 * {
   margin: 0;
   padding: 0;
