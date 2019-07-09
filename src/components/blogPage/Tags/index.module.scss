@@ -1,0 +1,19 @@
+@import '../../../static/style/color.scss';
+
+.tags {
+  margin-top: 24px;
+  .tagList {
+    display: flex;
+    flex-wrap: wrap;
+    .tag {
+      cursor: pointer;
+      line-height: 24px;
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+      &:hover {
+        color: $level1;
+      }
+    }
+  }
+}

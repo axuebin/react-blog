@@ -9,3 +9,8 @@ export interface ArticleItem {
   banner?: string
   history?: any
 }
+
+export interface Tag {
+  id: number
+  name: string
+}

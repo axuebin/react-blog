@@ -1,3 +1,5 @@
+@import '../../../static/style/color.scss';
+
 .hot {
   margin-top: 24px;
   .articleList {
@@ -10,6 +12,9 @@
       line-height: 20px;
       &:not(:first-child) {
         margin-top: 8px;
+      }
+      &:hover {
+        color: $level1;
       }
     }
   }
