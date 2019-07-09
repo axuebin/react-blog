@@ -1,0 +1,25 @@
+@import '../../static/style/color.scss';
+
+.blog-page {
+  width: 100%;
+  flex: 1;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $background;
+  .container {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+  }
+  .left {
+    flex: 1;
+  }
+  .right {
+    width: 300px;
+  }
+}
