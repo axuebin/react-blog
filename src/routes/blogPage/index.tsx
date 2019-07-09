@@ -1,6 +1,7 @@
 import * as React from 'react'
 import ArticleList from '../../components/blogPage/ArticleList'
 import Tip from '../../components/blogPage/Tip'
+import Archive from '../../components/blogPage/Archive'
 import styles from './index.module.scss'
 
 function BlogPage() {
@@ -12,7 +13,7 @@ function BlogPage() {
           <ArticleList></ArticleList>
         </div>
         <div className={styles.right}>
-        1
+          <Archive></Archive>
         </div>
       </div>
     </div>

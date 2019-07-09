@@ -2,6 +2,9 @@
 
 .articleItem {
   padding: 0 30px 30px;
+  &:first-child {
+    padding-top: 40px;
+  }
   &:not(:first-child) {
     .container {
       margin-top: 40px;
@@ -14,6 +17,9 @@
       display: block;
       margin: 0 auto;
     }
+  }
+  &:hover {
+    box-shadow: 0 2px 15px 4px rgba(153, 153, 153, 0.5);
   }
   .title {
     color: #333;
