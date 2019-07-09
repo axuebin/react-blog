@@ -1,0 +1,15 @@
+@import '../../../static/style/color.scss';
+
+.card {
+  .title {
+    height: 48px;
+    line-height: 48px;
+    color: $level1;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .container {
+    font-size: 14px;
+    color: #666666;
+  }
+}

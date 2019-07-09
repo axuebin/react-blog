@@ -1,0 +1,16 @@
+.hot {
+  margin-top: 24px;
+  .articleList {
+    .article {
+      cursor: pointer;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      line-height: 20px;
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+  }
+}
