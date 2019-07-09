@@ -1,10 +1,10 @@
 import * as React from 'react'
 import Banner from '../../components/indexPage/Banner'
-import './index.scss'
+import styles from './index.module.scss'
 
 function IndexPage() {
   return (
-    <div className="index-page">
+    <div className={styles.indexPage}>
       <Banner></Banner>
     </div>
   );
