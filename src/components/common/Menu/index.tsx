@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
-import { MenuItem as MenuListInterface } from '../interfaces';
+import { MenuItem as MenuItemInterface } from '../interfaces';
 import './index.scss';
 
-const MenuItem = ({ id, name, active, index, setActiveIndex, history }: MenuListInterface) => {
+const MenuItem = ({ id, name, active, index, setActiveIndex, history }: MenuItemInterface) => {
   const onClickItem = (index: number | undefined) => {
     setActiveIndex && setActiveIndex(index);
     history.push(`/${id}`);
@@ -17,7 +17,7 @@ interface IState {
   activeIndex: number
 }
 interface IProps extends RouteComponentProps {
-  menuList: MenuListInterface[]
+  menuList: MenuItemInterface[]
 }
 class Menu extends React.Component<IProps, IState> {
   constructor(props: any) {
@@ -47,7 +47,7 @@ class Menu extends React.Component<IProps, IState> {
     return (
       <div className="menu">
         {
-          menuList.map((menu: MenuListInterface, index) => (
+          menuList.map((menu: MenuItemInterface, index) => (
             <MenuItem key={menu.id}
               id={menu.id}
               name={menu.name}
