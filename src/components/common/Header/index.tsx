@@ -14,7 +14,7 @@ class Header extends React.Component<IProps, IState> {
       menuList: [{
         id: '', name: '首页'
       }, {
-        id: 'articles', name: '文章'
+        id: 'blog', name: '文章'
       }, {
         id: 'photography', name: '照片'
       }, {

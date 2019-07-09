@@ -26,6 +26,16 @@ class Menu extends React.Component<IProps, IState> {
       activeIndex: 0,
     }
   }
+  componentDidMount() {
+    const { menuList, location } = this.props
+    const route = location.pathname
+    if (route) {
+      const index = menuList.findIndex(item => item.id === route.replace(/\//g, ''))
+      this.setState({
+        activeIndex: index,
+      })
+    }
+  }
   render() {
     const { activeIndex } = this.state
     const { menuList, history } = this.props
