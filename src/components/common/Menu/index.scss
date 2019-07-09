@@ -1,0 +1,32 @@
+@import '../../../static/style/color.scss';
+
+.menu {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  &-item {
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-out;
+    position: relative;
+
+    .name {
+      font-size: 16px;
+      color: $level4;
+    }
+
+    &-active,
+    &:hover {
+      background-color: $level3;
+      cursor: pointer;
+
+      &-name {
+        color: $level4;
+      }
+    }
+  }
+}

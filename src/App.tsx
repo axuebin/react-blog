@@ -7,13 +7,11 @@ import CommonHeader from './components/common/Header';
 function App() {
   return (
     <Router>
-      <div>
-        <CommonHeader></CommonHeader>
-        <Switch>
-          <Route path="/" exact component={Index}/>
-          <Route component={NoMatch} />
-        </Switch>
-      </div>
+      <CommonHeader></CommonHeader>
+      <Switch>
+        <Route path="/" exact component={Index}/>
+        <Route component={NoMatch} />
+      </Switch>
     </Router>
   );
 }

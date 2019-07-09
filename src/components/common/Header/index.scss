@@ -1,4 +1,31 @@
+@import '../../../static/style/color.scss';
+
 .header {
-    height: 48px;
-    border-bottom: 1px solid #e5e5e5;
+  height: 60px;
+  background-color: $level1;
+  padding: 0 60px;
+  display: flex;
+
+  .logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .title {
+      font-size: 20px;
+      color: $level4;
+    }
+  }
+
+  .github {
+    padding: 0 30px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .name {
+      font-size: 16px;
+      color: $level4;
+    }
+  }
 }
