@@ -1,8 +1,8 @@
 import * as React from 'react'
-import { withRouter, RouteComponentProps } from 'react-router-dom';
+import { withRouter, RouteComponentProps } from 'react-router-dom'
 import { ArticleItem as ArticleInterface } from '../interfaces'
 import ArticleItem from '../ArticleItem'
-import './index.scss'
+import styles from './index.module.scss'
 
 interface IState {
   articleList: ArticleInterface[]
@@ -61,7 +61,7 @@ class ArticleList extends React.Component<IProps, IState> {
     const { history } = this.props
     const articleList = this.state.articleList
     return (
-      <div className="article-list">
+      <div className={styles.articleList}>
         {
           articleList.map((article: ArticleInterface) => (
               <ArticleItem key={article.id}

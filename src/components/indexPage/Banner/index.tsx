@@ -1,14 +1,14 @@
 import * as React from 'react'
-import './index.scss'
+import styles from './index.module.scss'
 import banner from '../../../static/image/index-banner.png'
 
 function Banner() {
   return (
-    <div className="banner">
-      <div className="photos">
-        <div className="list">
-          <div className="item">
-            <img src={banner} className="item-image"></img>
+    <div className={styles.banner}>
+      <div className={styles.photos}>
+        <div className={styles.list}>
+          <div className={styles.item}>
+            <img src={banner} className={styles.image}></img>
           </div>
         </div>
       </div>

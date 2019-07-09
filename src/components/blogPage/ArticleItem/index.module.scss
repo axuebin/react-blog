@@ -1,9 +1,9 @@
 @import '../../../static/style/color.scss';
 
-.article-item {
+.articleItem {
   padding: 0 30px 30px;
   &:not(:first-child) {
-    .article-item-container {
+    .container {
       margin-top: 40px;
     }
     &::before {
@@ -43,7 +43,7 @@
     height: 200px;
     display: flex;
     justify-content: center;
-    &-image {
+    .image {
       width: auto;
       height: 200px;
     }
@@ -51,7 +51,7 @@
   .content {
     margin-top: 20px;
     cursor: pointer;
-    &-text {
+    .text {
       color: $level1;
       font-size: 14px;
       line-height: 20px;
@@ -62,12 +62,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &-more {
+    .more {
       color: $level2;
       font-size: 14px;
       cursor: pointer;
     }
-    &-tags {
+    .tags {
       .tag {
         padding: 4px 12px;
         color: #666666;
