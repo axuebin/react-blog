@@ -1,67 +1,50 @@
 import * as React from 'react'
 import Card from '../Card'
-import { Tag as TagInterface, Tag } from '../interfaces'
+// import { Tag as TagInterface } from '../interfaces'
 import styles from './index.module.scss'
+import { getTags } from '../../../api/service';
 
 interface IState {
-  tagList: TagInterface[]
+  tags: string[]
+  tagsCount: number
 }
 interface IProps {
 }
-
-const tagList: TagInterface[] = [{
-  id: 1,
-  name: '前端'
-}, {
-  id: 2,
-  name: 'JavaScript'
-}, {
-  id: 3,
-  name: 'webpack'
-}, {
-  id: 4,
-  name: 'babel'
-}, {
-  id: 5,
-  name: '浏览器'
-}, {
-  id: 6,
-  name: '打包'
-}, {
-  id: 7,
-  name: '优化'
-}, {
-  id: 8,
-  name: '数据结构'
-}]
 
 class Tags extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props)
     this.state = {
-      tagList: [],
+      tags: [],
+      tagsCount: 0
     }
   }
   componentDidMount() {
-    this.setState({
-      tagList,
+    getTags().then(res => {
+      if (res.success && res.data && Object.keys(res.data).length > 0) {
+        const { data, count } = res.data
+        this.setState({
+          tags: data,
+          tagsCount: count || 0,
+        })
+      }
     })
   }
-  onClickItem(id: number) {
-    console.log(id)
+  onClickItem(tag: string) {
+    console.log(tag)
   }
   render() {
     const { onClickItem } = this
-    const tagList = this.state.tagList
+    const { tags, tagsCount } = this.state
     return (
       <div className={styles.tags}>
         <Card title="标签">
             <div className={styles.tagList}>
               {
-                tagList.map((tag: TagInterface) => (
-                  <div key={tag.id} 
-                    onClick={() => {onClickItem(tag.id)}}
-                    className={styles.tag}>{tag.name}</div>
+                tags.map((tag: string, index: number) => (
+                  <div key={index} 
+                    onClick={() => {onClickItem(tag)}}
+                    className={styles.tag}>{tag}</div>
                 ))
               }
             </div>

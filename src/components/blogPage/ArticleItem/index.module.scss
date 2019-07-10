@@ -54,13 +54,17 @@
       height: 200px;
     }
   }
-  .content {
+  .desc {
     margin-top: 20px;
     cursor: pointer;
     .text {
       color: $level1;
       font-size: 14px;
       line-height: 20px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
     }
   }
   .bottom {
