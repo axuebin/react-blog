@@ -1,8 +1,9 @@
 import * as React from 'react'
+import { formatDateStamp } from '../../../lib/utils'
 import styles from './index.module.scss'
 
 const ArticleItem = ({ article, history  }: any) => {
-  const { _id, title, banner, desc, createdDate, author, category, tags = [] } = article
+  const { _id, title, banner, desc, createdDate, author, category, tags = [], pv } = article
   const onClickItem = () => {
     console.log(_id)
   }
@@ -10,9 +11,10 @@ const ArticleItem = ({ article, history  }: any) => {
     <div className={styles.container}>
       <div className={styles.title}>{title}</div>
       <div className={styles.info}>
-        <span className={styles.date}>{createdDate}</span>
+        <span className={styles.date}>{formatDateStamp(createdDate)}</span>
         <span className={styles.author}>{author}</span>
         <span className={styles.category}>{category}</span>
+        <span className={styles.pv}>阅读量：{pv}</span>
       </div>
       {
         banner ? <div className={styles.banner}>
