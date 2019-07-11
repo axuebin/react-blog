@@ -4,3 +4,21 @@
   flex: 1;
   box-sizing: border-box;
 }
+.more {
+  width: 100px;
+  margin: 12px auto;
+  border: 1px solid $level1;
+  cursor: pointer;
+  .text {
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+  }
+}
+.nomore {
+  margin: 12px auto;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
