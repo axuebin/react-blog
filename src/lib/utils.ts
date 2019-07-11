@@ -8,3 +8,25 @@ export const formatDateStamp = (datastamp: any) => {
   const seconds = d.getSeconds()
   return `${year}-${month}-${day} ${hours}:${minuties}:${seconds}`
 }
+
+export const qs = () => {
+  const href = location.href;
+  const result: any = {};
+  let param = null;
+  const reg = /[?&](.*?)=([^&#]*)/g;
+
+  param = reg.exec(href);
+  while (param) {
+      try {
+          result[param[1]] = decodeURIComponent(param[2]);
+      } catch (e) {
+          try {
+              result[param[1]] = unescape(param[2]);
+          } catch (escapeErr) {
+              result[param[1]] = param[2];
+          }
+      }
+      param = reg.exec(href);
+  }
+  return result;
+}

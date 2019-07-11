@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Card from '../Card'
-// import { Tag as TagInterface } from '../interfaces'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
 import styles from './index.module.scss'
 import { getTags } from '../../../api/service';
 
@@ -8,7 +8,7 @@ interface IState {
   tags: string[]
   tagsCount: number
 }
-interface IProps {
+interface IProps extends RouteComponentProps {
 }
 
 class Tags extends React.Component<IProps, IState> {
@@ -30,8 +30,9 @@ class Tags extends React.Component<IProps, IState> {
       }
     })
   }
-  onClickItem(tag: string) {
-    console.log(tag)
+  onClickItem = (tag: string) => {
+    const { history } = this.props
+    history.push(`/blog?tag=${encodeURIComponent(tag)}`)
   }
   render() {
     const { onClickItem } = this
@@ -54,4 +55,4 @@ class Tags extends React.Component<IProps, IState> {
   }
 }
 
-export default Tags
+export default withRouter(Tags)

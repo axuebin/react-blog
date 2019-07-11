@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Card from '../Card'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
 import { getCategory } from '../../../api/service';
 import { Category as CategoryInterface } from '../interfaces'
 import styles from './index.module.scss'
@@ -8,7 +9,7 @@ interface IState {
   categoryList: CategoryInterface[]
   categoryCount: number
 }
-interface IProps {
+interface IProps extends RouteComponentProps {
 }
 
 class Category extends React.Component<IProps, IState> {
@@ -30,8 +31,9 @@ class Category extends React.Component<IProps, IState> {
       }
     })
   }
-  onClickItem(category: string) {
-    console.log(category)
+  onClickItem = (category: string) => {
+    const { history } = this.props
+    history.push(`/blog?category=${encodeURIComponent(category)}`)
   }
   render() {
     const { onClickItem } = this
@@ -54,4 +56,4 @@ class Category extends React.Component<IProps, IState> {
   }
 }
 
-export default Category
+export default withRouter(Category)

@@ -7,13 +7,21 @@ const ArticleItem = ({ article, history  }: any) => {
   const onClickItem = () => {
     console.log(_id)
   }
+  const onClickCategory = (e: any, category: string) => {
+    e.stopPropagation();
+    history.push(`/blog?category=${encodeURIComponent(category)}`)
+  }
+  const onClickTag = (e: any, tag: string) => {
+    e.stopPropagation();
+    history.push(`/blog?tag=${encodeURIComponent(tag)}`)
+  }
   return <div className={styles.articleItem} onClick={() => {onClickItem()}}>
     <div className={styles.container}>
       <div className={styles.title}>{title}</div>
       <div className={styles.info}>
         <span className={styles.date}>{formatDateStamp(createdDate)}</span>
         <span className={styles.author}>{author}</span>
-        <span className={styles.category}>{category}</span>
+        <span className={styles.category} onClick={(e) => onClickCategory(e, category)}>{category}</span>
         <span className={styles.pv}>阅读量：{pv}</span>
       </div>
       {
@@ -29,7 +37,7 @@ const ArticleItem = ({ article, history  }: any) => {
         <div className={styles.tags}>
           {
             tags.map((tag: string, index: number) => (
-              <span key={index} className={styles.tag}>{tag}</span>
+              <span key={index} className={styles.tag} onClick={(e) => onClickTag(e, tag)}>{tag}</span>
             ))
           }
         </div>
