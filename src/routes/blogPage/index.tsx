@@ -4,6 +4,7 @@ import Tip from '../../components/blogPage/Tip'
 import Archive from '../../components/blogPage/Archive'
 import Hot from '../../components/blogPage/Hot'
 import Tags from '../../components/blogPage/Tags'
+import Category from '../../components/blogPage/Category'
 import BackTop from '../../components/common/BackTop'
 import styles from './index.module.scss'
 
@@ -18,6 +19,7 @@ function BlogPage() {
         <div className={styles.right}>
           <Archive></Archive>
           <Hot></Hot>
+          <Category></Category>
           <Tags></Tags>
         </div>
       </div>

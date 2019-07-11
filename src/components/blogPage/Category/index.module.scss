@@ -1,0 +1,19 @@
+@import '../../../static/style/color.scss';
+
+.categorys {
+  margin-top: 24px;
+  .categoryList {
+    display: flex;
+    flex-wrap: wrap;
+    .category {
+      cursor: pointer;
+      line-height: 24px;
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+      &:hover {
+        color: $level1;
+      }
+    }
+  }
+}

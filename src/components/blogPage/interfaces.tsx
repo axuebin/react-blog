@@ -15,3 +15,8 @@ export interface ArticleItem {
 //   id: number
 //   name: string
 // }
+
+export interface Category {
+  category: string
+  count: number
+}
