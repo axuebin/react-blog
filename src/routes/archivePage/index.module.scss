@@ -1,0 +1,56 @@
+@import '../../static/style/color.scss';
+
+.archivePage {
+  width: 100%;
+  flex: 1;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: $background;
+  .container {
+    margin: 30px auto 0;
+    width: 70%;
+    display: flex;
+    .left {
+      flex: 1;
+    }
+    .right {
+      width: 300px;
+      padding: 0 24px;
+    }
+    .archive {
+      flex: 1;
+      .year {
+        &:not(:first-child) {
+          margin-top: 24px;
+        }
+        // &::after {
+        //   content: '';
+        //   width: 50%;
+        //   height: 1px;
+        //   background-color: #e5e5e5;
+        //   display: block;
+        //   margin-top: 24px;
+        // }
+        .title {
+          font-size: 20px;
+          color: $level1;
+        }
+        .list {
+          margin-top: 12px;
+          .item {
+            margin-top: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            .title {
+              margin-left: 8px;
+              font-size: 14px;
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+  }
+}

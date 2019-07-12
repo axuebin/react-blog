@@ -20,3 +20,9 @@ export interface Category {
   category: string
   count: number
 }
+
+export interface ArchiveItem {
+  _id: string
+  title: string
+  createdDate: string
+}

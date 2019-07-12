@@ -102,20 +102,25 @@ class ArticleList extends React.Component<IProps, IState> {
     return (
       <div className={styles.articleList}>
         {
-          articleList.map((article: ArticleInterface) => (
-              <ArticleItem key={article._id}
-                article={article}
-                history={history}
-              ></ArticleItem>
-            )
-          )
-        }
-        {
-          articleList.length < count ? 
-          <div className={styles.more} onClick={() => this.more()}>
-            <div className={styles.text}>查看更多</div>
-          </div>
-          : <div className={styles.nomore}>没有更多了，我会继续加油哒~</div>
+          count > 0 ?
+          <div>
+            {
+              articleList.map((article: ArticleInterface) => (
+                  <ArticleItem key={article._id}
+                    article={article}
+                    history={history}
+                  ></ArticleItem>
+                )
+              )
+            }
+            {
+              articleList.length < count ? 
+              <div className={styles.more} onClick={() => this.more()}>
+                <div className={styles.text}>查看更多</div>
+              </div>
+              : <div className={styles.nomore}>没有更多了，我会继续加油哒~</div>
+            }
+          </div> : ''
         }
       </div>
     );

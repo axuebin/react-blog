@@ -9,6 +9,13 @@ export const formatDateStamp = (datastamp: any) => {
   return `${year}-${month}-${day} ${hours}:${minuties}:${seconds}`
 }
 
+export const formatMonthDate = (datastamp: any) => {
+  const d = new Date(datastamp)
+  const month = d.getMonth() + 1
+  const day = d.getDate()
+  return `${month}月${day}日`
+}
+
 export const qs = () => {
   const href = location.href;
   const result: any = {};
