@@ -5,7 +5,7 @@ import styles from './index.module.scss'
 const ArticleItem = ({ article, history  }: any) => {
   const { _id, title, banner, desc, createdDate, author, category, tags = [], pv } = article
   const onClickItem = () => {
-    console.log(_id)
+    history.push(`/blog/detail?_id=${_id}`)
   }
   const onClickCategory = (e: any, category: string) => {
     e.stopPropagation();

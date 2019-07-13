@@ -3,12 +3,13 @@ export interface ArticleItem {
   title: string
   content?: string
   author: string
-  createDate: string
+  createdDate: string
   category: string
   tags: string[]
   banner?: string
   history?: any
   desc: string
+  pv?: number
 }
 
 // export interface Tag {

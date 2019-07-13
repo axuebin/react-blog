@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
 import Card from '../Card'
 import { ArticleItem as ArticleInterface } from '../interfaces'
 import { getHotArticleList } from '../../../api/service'
@@ -7,7 +8,7 @@ import styles from './index.module.scss'
 interface IState {
   articleList: ArticleInterface[]
 }
-interface IProps {
+interface IProps extends RouteComponentProps {
 }
 class Hot extends React.Component<IProps, IState> {
   constructor(props: any) {
@@ -25,8 +26,8 @@ class Hot extends React.Component<IProps, IState> {
       }
     })
   }
-  onClickItem(_id: string) {
-    console.log(_id)
+  onClickItem = (_id: string) => {
+    this.props.history.push(`/blog/detail?_id=${_id}`)
   }
   render() {
     const { onClickItem } = this
@@ -49,4 +50,4 @@ class Hot extends React.Component<IProps, IState> {
   }
 }
 
-export default Hot
+export default withRouter(Hot)

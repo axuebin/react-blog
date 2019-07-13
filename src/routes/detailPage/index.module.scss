@@ -1,0 +1,160 @@
+@import '../../static/style/color.scss';
+
+.detailPage {
+  width: 100%;
+  flex: 1;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: $background;
+  .container {
+    margin: 30px auto 0;
+    width: 70%;
+    display: flex;
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      .detail {
+        margin-bottom: 80px;
+        flex: 1;
+        .title {
+          font-size: 22px;
+          color: $level1;
+          font-weight: bold;
+        }
+        .info {
+          margin-top: 10px;
+          color: #666666;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          span {
+            margin-right: 8px;
+          }
+          span:not(:first-child) {
+            border-left: 1px solid #e5e5e5;
+            padding-left: 8px;
+          }
+          .category {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .right {
+      flex: 0 0 300px;
+      padding: 0 24px;
+    }
+  }
+}
+
+.content {
+  color: #444;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  &::before {
+    content: '# '
+  }
+  &::after {
+    content: '';
+    height: 1px;
+    background-color: #e5e5e5;
+    display: block;
+    margin: 12px auto 20px;
+  }
+}
+
+.content h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.content h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.content p {
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 24px;
+}
+
+.content ul, ol {
+  padding-left: 1.2em;
+}
+
+.content li {
+  list-style-type: disc;
+}
+
+.content blockquote {
+  padding: 10px 12px;
+  border-left: 2px solid black;
+  background: rgb(200, 200, 200);
+  margin: 12px 0;
+  p {
+    margin: 0;
+  }
+}
+
+.content p code, .content ul code {
+  display: inline-block;
+  padding: 0 4px;
+  color: $level1;
+  border-radius: 3px;
+  line-height: 20px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  margin: 0 4px;
+}
+
+.content pre code {
+  display: block;
+  width: 600px;
+  margin: 20px auto;
+  overflow-x: auto;
+  background: rgb(29, 31, 33);
+  color: rgb(200, 200, 200);
+  padding: 10px 12px 20px;
+  box-sizing: border-box;
+  font-family: Consolas;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 4px;
+}
+
+.content table {
+  margin: 20px auto;
+  width: 80%;
+  border: 1px solid #E5E5E5;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.content p>img {
+  max-width: 80%;
+  display: block;
+  margin: 12px auto;
+}
+
+.content th, .content td {
+  height: 40px;
+  padding: 0px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.content table>tbody>tr:nth-child(odd)>td, .content table>tbody>tr:nth-child(odd)>th {
+  background-color: #f9f9f9;
+}

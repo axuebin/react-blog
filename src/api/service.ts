@@ -5,6 +5,7 @@ import {
   getTagsPath,
   getCategoryPath,
   getArchivePath,
+  getDetailPath,
 } from './api'
 
 export const getArticleList = async (payload = {}): Promise<any> => {
@@ -29,5 +30,10 @@ export const getTags = async (payload = {}): Promise<any> => {
 
 export const getArchive = async (payload = {}): Promise<any> => {
   const response = await axios(getArchivePath, payload, 'get');
+  return response;
+};
+
+export const getDetail = async (payload = {}): Promise<any> => {
+  const response = await axios(getDetailPath, payload, 'get');
   return response;
 };
