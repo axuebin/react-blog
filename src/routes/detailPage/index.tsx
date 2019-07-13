@@ -22,8 +22,9 @@ class DetailPage extends React.Component<IProps, IState> {
   componentDidMount() {
     this.init()
   }
-  componentWillUpdate() {
+  componentDidUpdate() {
     // this.init()
+    this.updateCodeSyntaxHighlighting();
   }
 
   init() {
@@ -74,6 +75,7 @@ class DetailPage extends React.Component<IProps, IState> {
               : ''
             }
           </div>
+          {/* <div className={styles.right}></div> */}
         </div>
         <BackTop></BackTop>
       </div>
