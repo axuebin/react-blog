@@ -24,12 +24,12 @@ class DetailPage extends React.Component<Props, State> {
   }
   componentDidUpdate() {
     // this.init()
-    this.updateCodeSyntaxHighlighting();
+    this.updateCodeSyntaxHighlighting()
   }
 
   init() {
     console.log()
-    this.updateCodeSyntaxHighlighting();
+    this.updateCodeSyntaxHighlighting()
     const { _id } = qs()
     getDetail({ _id }).then(res => {
       if (res.success) {
@@ -42,9 +42,9 @@ class DetailPage extends React.Component<Props, State> {
 
   updateCodeSyntaxHighlighting = () => {
     document.querySelectorAll("pre code").forEach(block => {
-      hljs.highlightBlock(block);
-    });
-  };
+      hljs.highlightBlock(block)
+    })
+  }
 
   render() {
     const { detail } = this.state

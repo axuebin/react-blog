@@ -9,7 +9,7 @@ interface Props {
 }
 
 class BackTop extends React.Component<Props, State> {
-  private backTopRef: React.RefObject<HTMLInputElement>;
+  private backTopRef: React.RefObject<HTMLInputElement>
   constructor(props: any) {
     super(props)
     this.state = {
