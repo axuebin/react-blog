@@ -1,18 +1,18 @@
 import * as React from 'react'
 import Card from '../Card'
 import { withRouter, RouteComponentProps } from 'react-router-dom'
-import { getCategory } from '../../../api/service';
+import { getCategory } from '../../../api/service'
 import { Category as CategoryInterface } from '../interfaces'
 import styles from './index.module.scss'
 
-interface IState {
+interface State {
   categoryList: CategoryInterface[]
   categoryCount: number
 }
-interface IProps extends RouteComponentProps {
+interface Props extends RouteComponentProps {
 }
 
-class Category extends React.Component<IProps, IState> {
+class Category extends React.Component<Props, State> {
   constructor(props: any) {
     super(props)
     this.state = {
@@ -37,22 +37,22 @@ class Category extends React.Component<IProps, IState> {
   }
   render() {
     const { onClickItem } = this
-    const { categoryList, categoryCount } = this.state
+    const { categoryList } = this.state
     return (
       <div className={styles.categorys}>
         <Card title="分类">
-            <div className={styles.categoryList}>
-              {
-                categoryList.map((category: CategoryInterface, index: number) => (
-                  <div key={index} 
-                    onClick={() => {onClickItem(category.category)}}
-                    className={styles.category}>{category.category}({category.count})</div>
-                ))
-              }
-            </div>
+          <div className={styles.categoryList}>
+            {
+              categoryList.map((category: CategoryInterface, index: number) => (
+                <div key={index} 
+                  onClick={() => {onClickItem(category.category)}}
+                  className={styles.category}>{category.category}({category.count})</div>
+              ))
+            }
+          </div>
         </Card>
       </div>
-    );
+    )
   }
 }
 

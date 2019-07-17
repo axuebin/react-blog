@@ -10,7 +10,7 @@ function Archive({ history }: RouteComponentProps) {
     <div className={styles.archive} onClick={() => {onClick()}}>
       <span className={styles.title}>归档</span>
     </div>
-  );
+  )
 }
 
-export default withRouter(Archive);
+export default withRouter(Archive)

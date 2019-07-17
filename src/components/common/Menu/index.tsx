@@ -1,25 +1,25 @@
-import React from 'react';
-import { withRouter, RouteComponentProps } from 'react-router-dom';
-import { MenuItem as MenuItemInterface } from '../interfaces';
-import './index.scss';
+import React from 'react'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
+import { MenuItem as MenuItemInterface } from '../interfaces'
+import './index.scss'
 
 const MenuItem = ({ id, name, active, index, setActiveIndex, history }: MenuItemInterface) => {
   const onClickItem = (index: number | undefined) => {
-    setActiveIndex && setActiveIndex(index);
-    history.push(`/${id}`);
+    setActiveIndex && setActiveIndex(index)
+    history.push(`/${id}`)
   }
   return <div className={`menu-item ${active ? 'menu-item-active' : ''}`} onClick={() => {onClickItem(index)}}>
     <span className="name">{name}</span>
   </div>
-};
+}
 
-interface IState {
+interface State {
   activeIndex: number
 }
-interface IProps extends RouteComponentProps {
+interface Props extends RouteComponentProps {
   menuList: MenuItemInterface[]
 }
-class Menu extends React.Component<IProps, IState> {
+class Menu extends React.Component<Props, State> {
   constructor(props: any) {
     super(props)
     this.state = {
@@ -55,11 +55,10 @@ class Menu extends React.Component<IProps, IState> {
               history={history}
               setActiveIndex={(index: number) => setActiveIndex(index)}
               active={activeIndex === index}></MenuItem>
-            )
-          )
+          ))
         }
       </div>
     )
   }
 }
-export default withRouter(Menu);
+export default withRouter(Menu)

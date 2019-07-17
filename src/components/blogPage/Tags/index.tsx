@@ -2,16 +2,16 @@ import * as React from 'react'
 import Card from '../Card'
 import { withRouter, RouteComponentProps } from 'react-router-dom'
 import styles from './index.module.scss'
-import { getTags } from '../../../api/service';
+import { getTags } from '../../../api/service'
 
-interface IState {
+interface State {
   tags: string[]
   tagsCount: number
 }
-interface IProps extends RouteComponentProps {
+interface Props extends RouteComponentProps {
 }
 
-class Tags extends React.Component<IProps, IState> {
+class Tags extends React.Component<Props, State> {
   constructor(props: any) {
     super(props)
     this.state = {
@@ -36,22 +36,22 @@ class Tags extends React.Component<IProps, IState> {
   }
   render() {
     const { onClickItem } = this
-    const { tags, tagsCount } = this.state
+    const { tags } = this.state
     return (
       <div className={styles.tags}>
         <Card title="标签">
-            <div className={styles.tagList}>
-              {
-                tags.map((tag: string, index: number) => (
-                  <div key={index} 
-                    onClick={() => {onClickItem(tag)}}
-                    className={styles.tag}>{tag}</div>
-                ))
-              }
-            </div>
+          <div className={styles.tagList}>
+            {
+              tags.map((tag: string, index: number) => (
+                <div key={index} 
+                  onClick={() => {onClickItem(tag)}}
+                  className={styles.tag}>{tag}</div>
+              ))
+            }
+          </div>
         </Card>
       </div>
-    );
+    )
   }
 }
 

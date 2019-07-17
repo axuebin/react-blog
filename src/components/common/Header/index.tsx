@@ -1,13 +1,13 @@
-import React from 'react';
-import Menu from '../Menu';
-import { MenuItem as MenuItemInterface } from '../interfaces';
-import './index.scss';
+import React from 'react'
+import Menu from '../Menu'
+import { MenuItem as MenuItemInterface } from '../interfaces'
+import './index.scss'
 
-interface IState {
+interface State {
   menuList: MenuItemInterface[]
 }
-interface IProps {}
-class Header extends React.Component<IProps, IState> {
+interface Props {}
+class Header extends React.Component<Props, State> {
   constructor(props: any) {
     super(props)
     this.state = {
@@ -36,8 +36,8 @@ class Header extends React.Component<IProps, IState> {
           <span className="name">Github</span>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header

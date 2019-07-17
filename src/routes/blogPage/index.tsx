@@ -25,7 +25,7 @@ function BlogPage() {
       </div>
       <BackTop></BackTop>
     </div>
-  );
+  )
 }
 
-export default BlogPage;
+export default BlogPage

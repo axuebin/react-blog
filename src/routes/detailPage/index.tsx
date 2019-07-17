@@ -6,13 +6,13 @@ import { qs, formatDateStamp } from '../../lib/utils'
 import styles from './index.module.scss'
 import 'highlight.js/styles/vs2015.css'
 
-interface IState {
+interface State {
   detail: any
 }
-interface IProps {
+interface Props {
 }
 
-class DetailPage extends React.Component<IProps, IState> {
+class DetailPage extends React.Component<Props, State> {
   constructor(props: any) {
     super(props)
     this.state = {
@@ -55,24 +55,24 @@ class DetailPage extends React.Component<IProps, IState> {
           <div className={styles.left}>
             {
               detail && Object.keys(detail).length > 0 ?
-              <div className={styles.detail}>
-                <div className={styles.title}>{title}</div>
-                <div className={styles.info}>
-                  <span className={styles.date}>{formatDateStamp(createdDate)}</span>
-                  <span className={styles.author}>{author}</span>
-                  <span className={styles.category}>{category}</span>
-                  <span className={styles.pv}>阅读量：{pv}</span>
+                <div className={styles.detail}>
+                  <div className={styles.title}>{title}</div>
+                  <div className={styles.info}>
+                    <span className={styles.date}>{formatDateStamp(createdDate)}</span>
+                    <span className={styles.author}>{author}</span>
+                    <span className={styles.category}>{category}</span>
+                    <span className={styles.pv}>阅读量：{pv}</span>
+                  </div>
+                  {
+                    banner ? <div className={styles.banner}>
+                      <img className={styles.image} src={banner}></img>
+                    </div> : ''
+                  }
+                  {
+                    content ? <div className={styles.content} dangerouslySetInnerHTML = {{ __html: content }}></div> : ''
+                  }
                 </div>
-                {
-                  banner ? <div className={styles.banner}>
-                    <img className={styles.image} src={banner}></img>
-                  </div> : ''
-                }
-                {
-                  content ? <div className={styles.content} dangerouslySetInnerHTML = {{ __html: content }}></div> : ''
-                }
-              </div>
-              : ''
+                : ''
             }
           </div>
           {/* <div className={styles.right}></div> */}

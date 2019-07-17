@@ -7,7 +7,7 @@ function IndexPage() {
     <div className={styles.indexPage}>
       <Banner></Banner>
     </div>
-  );
+  )
 }
 
-export default IndexPage;
+export default IndexPage

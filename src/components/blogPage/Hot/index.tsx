@@ -5,12 +5,12 @@ import { ArticleItem as ArticleInterface } from '../interfaces'
 import { getHotArticleList } from '../../../api/service'
 import styles from './index.module.scss'
 
-interface IState {
+interface State {
   articleList: ArticleInterface[]
 }
-interface IProps extends RouteComponentProps {
+interface Props extends RouteComponentProps {
 }
-class Hot extends React.Component<IProps, IState> {
+class Hot extends React.Component<Props, State> {
   constructor(props: any) {
     super(props)
     this.state = {
@@ -35,18 +35,18 @@ class Hot extends React.Component<IProps, IState> {
     return (
       <div className={styles.hot}>
         <Card title="热门文章">
-            <div className={styles.articleList}>
-              {
-                articleList.map((article: ArticleInterface) => (
-                  <div key={article._id} 
-                    onClick={() => {onClickItem(article._id)}}
-                    className={styles.article}>{article.title}</div>
-                ))
-              }
-            </div>
+          <div className={styles.articleList}>
+            {
+              articleList.map((article: ArticleInterface) => (
+                <div key={article._id} 
+                  onClick={() => {onClickItem(article._id)}}
+                  className={styles.article}>{article.title}</div>
+              ))
+            }
+          </div>
         </Card>
       </div>
-    );
+    )
   }
 }
 

@@ -13,7 +13,7 @@ function Tip() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Tip;
+export default Tip

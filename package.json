@@ -6,7 +6,6 @@
     "@types/highlight.js": "^9.12.3",
     "@types/jest": "24.0.15",
     "@types/node": "12.0.12",
-    "@types/react": "16.8.23",
     "@types/react-dom": "16.8.4",
     "@types/react-router-dom": "^4.3.4",
     "axios": "^0.19.0",
@@ -18,7 +17,13 @@
     "react-scripts": "^2.1.0",
     "typescript": "3.5.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/react": "^16.8.23",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "eslint": "^5.6.0",
+    "eslint-config-react": "^1.1.7"
+  },
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",

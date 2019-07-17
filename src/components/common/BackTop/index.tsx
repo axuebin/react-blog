@@ -1,24 +1,26 @@
 import * as React from 'react'
 import styles from './index.module.scss'
 
-interface IState {
+interface State {
   show: boolean
   parentNode: HTMLDivElement | null
 }
-interface IProps {
+interface Props {
 }
 
-class BackTop extends React.Component<IProps, IState> {
+class BackTop extends React.Component<Props, State> {
+  private backTopRef: React.RefObject<HTMLInputElement>;
   constructor(props: any) {
     super(props)
     this.state = {
       show: false,
-      parentNode: null
+      parentNode: null,
     }
+    this.backTopRef = React.createRef(),
     this.handlerScroll = this.handlerScroll.bind(this)
   }
   componentDidMount() {
-    const parentNode = (this.refs.backTop as HTMLDivElement).parentNode as HTMLDivElement
+    const parentNode = (this.backTopRef.current as HTMLDivElement).parentNode as HTMLDivElement
     this.setState({
       parentNode
     })
@@ -39,19 +41,19 @@ class BackTop extends React.Component<IProps, IState> {
   backTop() {
     const { parentNode } = this.state
     if (parentNode) {
-      parentNode.scrollTop = 0;
+      parentNode.scrollTop = 0
     }
   }
   render() {
     const { show } = this.state
     return (
-      <div ref="backTop">
+      <div ref={this.backTopRef}>
         {
           show ? <div className={styles.backTop} onClick={() => this.backTop()}></div> : ''
         }
       </div>
-    );
+    )
   }
 }
 
-export default BackTop;
+export default BackTop

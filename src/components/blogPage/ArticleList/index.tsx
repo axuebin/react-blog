@@ -7,7 +7,7 @@ import { getArticleList } from '../../../api/service'
 import { qs } from '../../../lib/utils'
 import styles from './index.module.scss'
 
-interface IState {
+interface State {
   articleList: ArticleInterface[]
   page: number
   pageSize: number
@@ -16,10 +16,10 @@ interface IState {
   category?: string
   tag?: string
 }
-interface IProps extends RouteComponentProps {
+interface Props extends RouteComponentProps {
 }
 
-class ArticleList extends React.Component<IProps, IState> {
+class ArticleList extends React.Component<Props, State> {
   constructor(props: any) {
     super(props)
     this.state = {
@@ -40,7 +40,7 @@ class ArticleList extends React.Component<IProps, IState> {
       tag,
     }).then(res => {
       if (res.success && res.data && Object.keys(res.data).length > 0) {
-        const { count, data } = res.data;
+        const { count, data } = res.data
         this.setState({
           count,
           articleList: data,
@@ -62,7 +62,7 @@ class ArticleList extends React.Component<IProps, IState> {
         tag,
       }).then(res => {
         if (res.success && res.data && Object.keys(res.data).length > 0) {
-          const { count, data } = res.data;
+          const { count, data } = res.data
           const temp = articleList.concat(data)
           this.setState({
             count,
@@ -88,11 +88,11 @@ class ArticleList extends React.Component<IProps, IState> {
     }
     const { category, tag } = this.state
     if (urlQuery.category !== category) {
-      query.category = urlQuery.category;
+      query.category = urlQuery.category
       return this.init(query)
     }
     if (urlQuery.tag !== tag) {
-      query.tag = urlQuery.tag;
+      query.tag = urlQuery.tag
       return this.init(query)
     }
   }
@@ -103,27 +103,26 @@ class ArticleList extends React.Component<IProps, IState> {
       <div className={styles.articleList}>
         {
           count > 0 ?
-          <div>
-            {
-              articleList.map((article: ArticleInterface) => (
+            <div>
+              {
+                articleList.map((article: ArticleInterface) => (
                   <ArticleItem key={article._id}
                     article={article}
                     history={history}
                   ></ArticleItem>
-                )
-              )
-            }
-            {
-              articleList.length < count ? 
-              <div className={styles.more} onClick={() => this.more()}>
-                <div className={styles.text}>查看更多</div>
-              </div>
-              : <div className={styles.nomore}>没有更多了，我会继续加油哒~</div>
-            }
-          </div> : ''
+                ))
+              }
+              {
+                articleList.length < count ? 
+                  <div className={styles.more} onClick={() => this.more()}>
+                    <div className={styles.text}>查看更多</div>
+                  </div>
+                  : <div className={styles.nomore}>没有更多了，我会继续加油哒~</div>
+              }
+            </div> : ''
         }
       </div>
-    );
+    )
   }
 }
 
